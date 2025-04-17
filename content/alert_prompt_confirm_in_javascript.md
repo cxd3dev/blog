@@ -12,8 +12,6 @@ it’s still worth learning them as part of the language fundamentals.
 
 All three are somewhat similar to `console.log()` in how they output info.
 
----
-
 #### Alert()
 
 The syntax is very simple — and so is its behavior.  
@@ -21,14 +19,17 @@ The syntax is very simple — and so is its behavior.
 
 ```js
 alert('Hello, friends!');
+```
 
 #### Confirm()
 
 This method is used to ask the user a yes/no question.
 For example: “Are you over 18?”
 
+```js
 let result = confirm('Are you over 18?');
 console.log(result);
+```
 
 It also opens a modal dialog, but with two buttons: OK and Cancel.
 Clicking OK stores `true` in the result variable

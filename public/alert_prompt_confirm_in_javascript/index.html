@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
-<head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script>
+<head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=63607&amp;path=livereload" data-no-instant defer></script>
     <link rel="icon" type="image/x-icon" href="../images/favicon.ico">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -100,33 +100,24 @@ using the <code>alert()</code>, <code>prompt()</code>, and <code>confirm()</code
 <p>Although these methods aren’t used in real-world projects,<br>
 it’s still worth learning them as part of the language fundamentals.</p>
 <p>All three are somewhat similar to <code>console.log()</code> in how they output info.</p>
-<hr>
 <h4 id="alert">Alert()</h4>
 <p>The syntax is very simple — and so is its behavior.<br>
 <code>alert()</code> creates a modal popup with a message you define:</p>
 <div class="highlight"><pre tabindex="0" class="chroma"><code class="language-js" data-lang="js"><span class="line"><span class="cl"><span class="nx">alert</span><span class="p">(</span><span class="s1">&#39;Hello, friends!&#39;</span><span class="p">);</span>
-</span></span><span class="line"><span class="cl">
-</span></span><span class="line"><span class="cl"><span class="err">####</span> <span class="nx">Confirm</span><span class="p">()</span>
-</span></span><span class="line"><span class="cl">
-</span></span><span class="line"><span class="cl"><span class="nx">This</span> <span class="nx">method</span> <span class="nx">is</span> <span class="nx">used</span> <span class="nx">to</span> <span class="nx">ask</span> <span class="nx">the</span> <span class="nx">user</span> <span class="nx">a</span> <span class="nx">yes</span><span class="o">/</span><span class="nx">no</span> <span class="nx">question</span><span class="p">.</span>
-</span></span><span class="line"><span class="cl"><span class="nx">For</span> <span class="nx">example</span><span class="o">:</span> <span class="err">“</span><span class="nx">Are</span> <span class="nx">you</span> <span class="nx">over</span> <span class="mi">18</span><span class="o">?</span><span class="err">”</span>
-</span></span><span class="line"><span class="cl">
-</span></span><span class="line"><span class="cl"><span class="kd">let</span> <span class="nx">result</span> <span class="o">=</span> <span class="nx">confirm</span><span class="p">(</span><span class="s1">&#39;Are you over 18?&#39;</span><span class="p">);</span>
+</span></span></code></pre></div><h4 id="confirm">Confirm()</h4>
+<p>This method is used to ask the user a yes/no question.
+For example: “Are you over 18?”</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-js" data-lang="js"><span class="line"><span class="cl"><span class="kd">let</span> <span class="nx">result</span> <span class="o">=</span> <span class="nx">confirm</span><span class="p">(</span><span class="s1">&#39;Are you over 18?&#39;</span><span class="p">);</span>
 </span></span><span class="line"><span class="cl"><span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nx">result</span><span class="p">);</span>
-</span></span><span class="line"><span class="cl">
-</span></span><span class="line"><span class="cl"><span class="nx">It</span> <span class="nx">also</span> <span class="nx">opens</span> <span class="nx">a</span> <span class="nx">modal</span> <span class="nx">dialog</span><span class="p">,</span> <span class="nx">but</span> <span class="kd">with</span> <span class="nx">two</span> <span class="nx">buttons</span><span class="o">:</span> <span class="nx">OK</span> <span class="nx">and</span> <span class="nx">Cancel</span><span class="p">.</span>
-</span></span><span class="line"><span class="cl"><span class="nx">Clicking</span> <span class="nx">OK</span> <span class="nx">stores</span> <span class="sb">`true`</span> <span class="k">in</span> <span class="nx">the</span> <span class="nx">result</span> <span class="nx">variable</span>
-</span></span><span class="line"><span class="cl"><span class="nx">Clicking</span> <span class="nx">Cancel</span> <span class="nx">stores</span> <span class="sb">`false`</span>
-</span></span><span class="line"><span class="cl">
-</span></span><span class="line"><span class="cl"><span class="err">####</span> <span class="nx">Prompt</span><span class="p">()</span>
-</span></span><span class="line"><span class="cl">
-</span></span><span class="line"><span class="cl"><span class="nx">Use</span> <span class="sb">`prompt()`</span> <span class="nx">to</span> <span class="nx">ask</span> <span class="nx">the</span> <span class="nx">user</span> <span class="nx">to</span> <span class="nx">input</span> <span class="nx">some</span> <span class="nx">text</span><span class="p">.</span>
-</span></span><span class="line"><span class="cl"><span class="nx">You</span> <span class="nx">can</span> <span class="nx">also</span> <span class="nx">provide</span> <span class="nx">a</span> <span class="sb">`default`</span> <span class="nx">value</span><span class="p">,</span> <span class="nx">just</span> <span class="nx">like</span> <span class="nx">a</span> <span class="nx">placeholder</span> <span class="k">in</span> <span class="nx">HTML</span><span class="p">.</span>
-</span></span><span class="line"><span class="cl">
-</span></span><span class="line"><span class="cl"><span class="sb">```js
-</span></span></span><span class="line"><span class="cl"><span class="sb">let answer = prompt(&#39;How old are you?&#39;, &#39;&#39;);
-</span></span></span><span class="line"><span class="cl"><span class="sb">console.log(answer);
-</span></span></span></code></pre></div><p>Any value returned from a prompt() will be a string,
+</span></span></code></pre></div><p>It also opens a modal dialog, but with two buttons: OK and Cancel.
+Clicking OK stores <code>true</code> in the result variable
+Clicking Cancel stores <code>false</code></p>
+<h4 id="prompt">Prompt()</h4>
+<p>Use <code>prompt()</code> to ask the user to input some text.
+You can also provide a <code>default</code> value, just like a placeholder in HTML.</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-js" data-lang="js"><span class="line"><span class="cl"><span class="kd">let</span> <span class="nx">answer</span> <span class="o">=</span> <span class="nx">prompt</span><span class="p">(</span><span class="s1">&#39;How old are you?&#39;</span><span class="p">,</span> <span class="s1">&#39;&#39;</span><span class="p">);</span>
+</span></span><span class="line"><span class="cl"><span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nx">answer</span><span class="p">);</span>
+</span></span></code></pre></div><p>Any value returned from a prompt() will be a string,
 even if the user types a number.</p>
 <p>Here’s how to collect multiple answers into an array:</p>
 <div class="highlight"><pre tabindex="0" class="chroma"><code class="language-js" data-lang="js"><span class="line"><span class="cl"><span class="kd">let</span> <span class="nx">answers</span> <span class="o">=</span> <span class="p">[];</span>

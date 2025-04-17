@@ -9,9 +9,9 @@ categories = [ "python" ]
 The `round()` function in Python is used to round numbers. It can round both integers and floating-point numbers.
 
 Syntax of the function `round()`
-``python
+```python
 round(number, ndigits)
-``
+```
 
 >`number` — the number to round up
 
@@ -19,28 +19,28 @@ round(number, ndigits)
 
 Rounding to the nearest integer
 
-``python
+```python
 result = round(3.14159)
 print(result) # Output: 3
 ```
 
 Rounding with the number of decimal places
 
-``python
+```python
 result = round(3.14159, 2)
 print(result) # Output: 3.14
-``
+```
 
 Rounding to the nearest larger integer
 
-``python
+```python
 result = round(3.7)
 print(result) # Output: 4
 ```
 
 Rounding up negative numbers
 
-``python
+```python
 result = round(-2.7)
 print(result) # Output: -3
 ```
@@ -48,10 +48,10 @@ print(result) # Output: -3
 Rounding to the nearest even number
 if the number is exactly in the middle
 
-``python
+```python
 result = round(2.5)
 print(result) # Output: 2
-``
+```
 
 If `ndigits' is not specified, `round()` rounds to the nearest integer.
 
@@ -65,25 +65,25 @@ Examples with `ndigits', the second parameter of the `round()` function
 
 Rounding to one decimal place
 
-``python
+```python
 result = round(3.14159, 1)
 print(result) # Output: 3.1
-``
+```
 
 Rounding to three decimal places
 
-``python
+```python
 result = round(3.14159, 3)
 print(result) # Output: 3.142
-``
+```
 
 Rounding to zero decimal places is equivalent to rounding
 to an integer
 
-``python
+```python
 result = round(3.14159, 0)
 print(result) # Output: 3.0
-``
+```
 
 The `round()` function is often used for:
 

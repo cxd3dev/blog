@@ -96,20 +96,14 @@
         
 
         <div><p>In JavaScript, arguments are the values passed into a function when it is called. They allow functions to receive and work with data. Arguments can be of any type: numbers, strings, objects, arrays, functions, and so on.</p>
-<p>There is a distinction between <em>parameters</em> and <em>arguments</em> in JavaScript:</p>
-<p><strong>Function parameters</strong> are the variables listed in the function definition. They are placeholders used to receive the arguments passed during a function call.</p>
+<p>There is a distinction between <em>parameters</em> and arguments in JavaScript:</p>
+<p>Function parameters are the variables listed in the function definition. They are placeholders used to receive the arguments passed during a function call.</p>
 <div class="highlight"><pre tabindex="0" class="chroma"><code class="language-js" data-lang="js"><span class="line"><span class="cl"><span class="kd">function</span> <span class="nx">greet</span><span class="p">(</span><span class="nx">name</span><span class="p">)</span> <span class="p">{</span> <span class="c1">// name — parameter
 </span></span></span><span class="line"><span class="cl"><span class="c1"></span>  <span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="sb">`Hello, </span><span class="si">${</span><span class="nx">name</span><span class="si">}</span><span class="sb">!`</span><span class="p">);</span>
 </span></span><span class="line"><span class="cl"><span class="p">}</span>
 </span></span></code></pre></div><p>Function arguments are the actual values provided when the function is called.</p>
 <div class="highlight"><pre tabindex="0" class="chroma"><code class="language-js" data-lang="js"><span class="line"><span class="cl"><span class="nx">greet</span><span class="p">(</span><span class="s2">&#34;Elle&#34;</span><span class="p">);</span> <span class="c1">// &#34;Elle&#34; — argument
-</span></span></span></code></pre></div><p>Arguments Are Passed by Value</p>
-<pre><code>Primitive types (numbers, strings, booleans)
-are passed by value. This means the function gets a copy, and any changes do not affect the original variable.
-
-Objects and arrays are passed by reference.
-The function works with the original object, so any changes will affect it outside the function.
-</code></pre>
+</span></span></span></code></pre></div><p>Arguments Are Passed by Value - Primitive types (numbers, strings, booleans) are passed by value. This means the function gets a copy, and any changes do not affect the original variable. Objects and arrays are passed by reference. The function works with the original object, so any changes will affect it outside the function.</p>
 <div class="highlight"><pre tabindex="0" class="chroma"><code class="language-js" data-lang="js"><span class="line"><span class="cl"><span class="kd">function</span> <span class="nx">changeValue</span><span class="p">(</span><span class="nx">a</span><span class="p">,</span> <span class="nx">b</span><span class="p">)</span> <span class="p">{</span>
 </span></span><span class="line"><span class="cl">  <span class="nx">a</span> <span class="o">=</span> <span class="mi">10</span><span class="p">;</span>
 </span></span><span class="line"><span class="cl">  <span class="nx">b</span><span class="p">.</span><span class="nx">value</span> <span class="o">=</span> <span class="mi">20</span><span class="p">;</span>
@@ -121,11 +115,7 @@ The function works with the original object, so any changes will affect it outsi
 </span></span><span class="line"><span class="cl"><span class="nx">changeValue</span><span class="p">(</span><span class="nx">num</span><span class="p">,</span> <span class="nx">obj</span><span class="p">);</span>
 </span></span><span class="line"><span class="cl"><span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nx">num</span><span class="p">);</span>       <span class="c1">// 5 (unchanged)
 </span></span></span><span class="line"><span class="cl"><span class="c1"></span><span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nx">obj</span><span class="p">.</span><span class="nx">value</span><span class="p">);</span> <span class="c1">// 20 (modified)
-</span></span></span></code></pre></div><p>Functions Can Accept Any Number of Arguments</p>
-<pre><code>If more arguments are passed than parameters, the extra ones are ignored.
-
-If fewer arguments are passed, the missing parameters are set to undefined.
-</code></pre>
+</span></span></span></code></pre></div><p>Functions Can Accept Any Number of Arguments - If more arguments are passed than parameters, the extra ones are ignored. If fewer arguments are passed, the missing parameters are set to undefined.</p>
 <div class="highlight"><pre tabindex="0" class="chroma"><code class="language-js" data-lang="js"><span class="line"><span class="cl"><span class="kd">function</span> <span class="nx">sum</span><span class="p">(</span><span class="nx">a</span><span class="p">,</span> <span class="nx">b</span><span class="p">)</span> <span class="p">{</span>
 </span></span><span class="line"><span class="cl">  <span class="k">return</span> <span class="nx">a</span> <span class="o">+</span> <span class="nx">b</span><span class="p">;</span>
 </span></span><span class="line"><span class="cl"><span class="p">}</span>
@@ -147,12 +137,9 @@ If fewer arguments are passed, the missing parameters are set to undefined.
 </span></span><span class="line"><span class="cl"><span class="nx">greet</span><span class="p">();</span>        <span class="c1">// Hello, Guest!
 </span></span></span><span class="line"><span class="cl"><span class="c1"></span><span class="nx">greet</span><span class="p">(</span><span class="s2">&#34;Elle&#34;</span><span class="p">);</span>  <span class="c1">// Hello, Elle!
 </span></span></span></code></pre></div><p>Summary:</p>
-<pre><code>Arguments are the values passed to a function.
-
-Parameters are the variables used to handle those values.
-
-JavaScript functions can accept any number of arguments — use them wisely.
-</code></pre>
+<p>Arguments are the values passed to a function.</p>
+<p>Parameters are the variables used to handle those values.</p>
+<p>JavaScript functions can accept any number of arguments — use them wisely.</p>
 </div>
     </div>
    </div>

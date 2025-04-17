@@ -132,8 +132,6 @@ Use `for...in` to iterate over keys and access their values. You can reference p
 
 Objects may have built-in methods and properties, and defining functions inside an object creates object methods.
 
----
-
 ### Object Destructuring
 
 Let’s destructure an object:

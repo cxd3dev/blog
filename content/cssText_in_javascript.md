@@ -4,12 +4,12 @@ title = 'The cssText property in JavaScript'
 categories = [ "javascript" ]
 +++
 
-The 'cssText` property allows you to set multiple CSS styles for an element in one line at once. This is useful when you need to quickly apply multiple styles without using separate properties of the `style` object.
+The cssText property allows you to set multiple CSS styles for an element in one line at once. This is useful when you need to quickly apply multiple styles without using separate properties of the `style` object.
 
 
-``js
+```js
 element.style.cssText = 'rule1; rule2; ...';
-``  
+``` 
 
 A real code example for applying multiple styles
 

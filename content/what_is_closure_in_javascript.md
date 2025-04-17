@@ -22,11 +22,12 @@ greetElle(); // "Hello, Ellie!"
 
 const greetAnna = createGreeting("Anna");
 greetAnna(); // "Hi, Anna!"
-``
+```
 
 Here, the `createGreeting` function gets a `name`
 and returns a new function that simply outputs:
-``js
+
+```js
 Hello, ${name}!.
 ```
 

@@ -23,8 +23,8 @@ oldItem.replaceWith(newItem);
 
 An example of replacing an element with text
 
-``js
+```js
 document.getElementById('title').replaceWith('There was a Cxd3');
-``
+```
 
 The `replaceWith()` method is a tool for replacing elements without changing the parent structure. It is ideal when you need to replace a component without removing or modifying other elements.

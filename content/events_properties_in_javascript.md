@@ -22,7 +22,7 @@ document.getElementById('myButton').addEventListener('click', function(event) {
 
 1 - `type`
 
-The 'type` property tells you what type of event occurred (for example, `click`, `keydown`, `submit`).
+The type property tells you what type of event occurred for example, `click` `keydown`, `submit`.
 
 ```js
 document.getElementById('myButton').addEventListener('click', function(event) {
@@ -72,7 +72,7 @@ document.addEventListener('click', function(event) {
 
 6 - `keyCode` and `code`
 
-The `keyCode` and code properties are used for keyboard events. The `keyCode' returns the numeric key code, and the code returns the physical key code, regardless of which key was pressed (for example, `Enter`, `Space`, `ArrowUp`).
+The `keyCode` and code properties are used for keyboard events. The keyCode returns the numeric key code, and the code returns the physical key code, regardless of which key was pressed (for example, `Enter`, `Space`, `ArrowUp`).
 
 ```js
 document.addEventListener('keydown', function(event) {
@@ -92,7 +92,7 @@ document.addEventListener('mousedown', function(event) {
 
 8 - `detail`
 
-The 'detail` property stores the number of mouse clicks in the `click` events. This property is useful when tracking double clicks.
+The detail property stores the number of mouse clicks in the `click` events. This property is useful when tracking double clicks.
 
 ```js
 document.addEventListener('click', function(event) {

@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
-<head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script>
+<head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=63607&amp;path=livereload" data-no-instant defer></script>
     <link rel="icon" type="image/x-icon" href="../images/favicon.ico">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -98,7 +98,6 @@
         <div><p>The <code>append()</code> and <code>prepend()</code> methods allow you to insert elements or text<br>
 at the <strong>end</strong> or the <strong>beginning</strong> of another element.<br>
 They provide a cleaner and more convenient alternative to <code>appendChild()</code>.</p>
-<hr>
 <h3 id="elementappend--add-to-the-end"><code>element.append()</code> — Add to the End</h3>
 <p>The <code>append()</code> method inserts content at the <strong>end</strong> of an element.<br>
 It can accept both DOM elements and text strings:</p>
@@ -106,17 +105,13 @@ It can accept both DOM elements and text strings:</p>
 </span></span><span class="line"><span class="cl"><span class="kd">let</span> <span class="nx">newDiv</span> <span class="o">=</span> <span class="nb">document</span><span class="p">.</span><span class="nx">createElement</span><span class="p">(</span><span class="s1">&#39;div&#39;</span><span class="p">);</span>
 </span></span><span class="line"><span class="cl"><span class="nx">newDiv</span><span class="p">.</span><span class="nx">textContent</span> <span class="o">=</span> <span class="s1">&#39;New element&#39;</span><span class="p">;</span>
 </span></span><span class="line"><span class="cl"><span class="nx">container</span><span class="p">.</span><span class="nx">append</span><span class="p">(</span><span class="nx">newDiv</span><span class="p">,</span> <span class="s1">&#39; And this is just text&#39;</span><span class="p">);</span>
-</span></span><span class="line"><span class="cl">
-</span></span><span class="line"><span class="cl"><span class="err">###</span> <span class="sb">`element.prepend()`</span> <span class="err">—</span> <span class="nx">Add</span> <span class="nx">to</span> <span class="nx">the</span> <span class="nx">Beginning</span>
-</span></span><span class="line"><span class="cl">
-</span></span><span class="line"><span class="cl"><span class="nx">The</span> <span class="nx">prepend</span><span class="p">()</span> <span class="nx">method</span> <span class="nx">inserts</span> <span class="nx">content</span> <span class="nx">at</span> <span class="nx">the</span> <span class="nx">beginning</span> <span class="k">of</span> <span class="nx">an</span> <span class="nx">element</span><span class="o">:</span>
-</span></span><span class="line"><span class="cl">
-</span></span><span class="line"><span class="cl"><span class="sb">```js
-</span></span></span><span class="line"><span class="cl"><span class="sb">let list = document.getElementById(&#39;myList&#39;);
-</span></span></span><span class="line"><span class="cl"><span class="sb">let newItem = document.createElement(&#39;li&#39;);
-</span></span></span><span class="line"><span class="cl"><span class="sb">newItem.textContent = &#39;New first item&#39;;
-</span></span></span><span class="line"><span class="cl"><span class="sb">list.prepend(newItem);
-</span></span></span></code></pre></div><p><code>append()</code> and <code>prepend()</code> are clean and modern methods for inserting content into the DOM.
+</span></span></code></pre></div><h3 id="elementprepend--add-to-the-beginning"><code>element.prepend()</code> — Add to the Beginning</h3>
+<p>The prepend() method inserts content at the beginning of an element:</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-js" data-lang="js"><span class="line"><span class="cl"><span class="kd">let</span> <span class="nx">list</span> <span class="o">=</span> <span class="nb">document</span><span class="p">.</span><span class="nx">getElementById</span><span class="p">(</span><span class="s1">&#39;myList&#39;</span><span class="p">);</span>
+</span></span><span class="line"><span class="cl"><span class="kd">let</span> <span class="nx">newItem</span> <span class="o">=</span> <span class="nb">document</span><span class="p">.</span><span class="nx">createElement</span><span class="p">(</span><span class="s1">&#39;li&#39;</span><span class="p">);</span>
+</span></span><span class="line"><span class="cl"><span class="nx">newItem</span><span class="p">.</span><span class="nx">textContent</span> <span class="o">=</span> <span class="s1">&#39;New first item&#39;</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl"><span class="nx">list</span><span class="p">.</span><span class="nx">prepend</span><span class="p">(</span><span class="nx">newItem</span><span class="p">);</span>
+</span></span></code></pre></div><p><code>append()</code> and <code>prepend()</code> are clean and modern methods for inserting content into the DOM.
 They replace the older <code>appendChild()</code> approach, offer shorter syntax,
 and allow you to insert multiple nodes or text at once.</p>
 </div>

@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
-<head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script>
+<head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=63607&amp;path=livereload" data-no-instant defer></script>
     <link rel="icon" type="image/x-icon" href="../images/favicon.ico">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -96,13 +96,13 @@
         
 
         <div><p>A Set object is a unique type of collection that represents a &ldquo;set&rdquo; of values in which each value is stored only once and has no keys.</p>
-<h2 id="basic-set-methods">Basic Set Methods</h2>
+<p>Basic Set Methods</p>
 <ul>
 <li><code>new Set(iterable)</code> — creates a Set, and if an iterable object was provided as an argument, usually an [array], then copies its values to the new Set.</li>
 <li><code>set.add(value)</code> — Adds a value to the set (if it is already present, no changes occur) and returns the Set object itself.</li>
 <li><code>set.delete(value)</code> — Removes a value from the set and returns <code>true</code> if the specified value was present in the set at the time of the call, otherwise it returns `false'.</li>
 <li><code>set.has(value)</code> — Returns <code>true</code> if the specified value is in the set; otherwise— `false'.</li>
-<li>`set.clear()&rsquo; — deletes all available values.</li>
+<li><code>set.clear()</code> — deletes all available values.</li>
 <li><code>set.size</code> — returns the number of elements in the set.</li>
 </ul>
 <p>The main feature is that with multiple calls to <code>set.add()</code> with the same value, nothing changes, so each value is stored in a single instance.</p>
@@ -122,26 +122,21 @@
 </span></span></span><span class="line"><span class="cl"><span class="c1"></span><span class="k">for</span> <span class="p">(</span><span class="kd">let</span> <span class="nx">user</span> <span class="k">of</span> <span class="nx">set</span><span class="p">)</span> <span class="p">{</span>
 </span></span><span class="line"><span class="cl"><span class="nx">alert</span><span class="p">(</span><span class="nx">user</span><span class="p">.</span><span class="nx">name</span> <span class="p">);</span> <span class="c1">// John (then Ann and Mariah)
 </span></span></span><span class="line"><span class="cl"><span class="c1"></span><span class="p">}</span>
-</span></span><span class="line"><span class="cl"><span class="sb">``</span>
-</span></span><span class="line"><span class="cl">
-</span></span><span class="line"><span class="cl"><span class="err">###</span> <span class="nx">Iterating</span> <span class="nx">through</span> <span class="nx">the</span> <span class="nx">Set</span> <span class="nx">object</span>
-</span></span><span class="line"><span class="cl">
-</span></span><span class="line"><span class="cl"><span class="nx">The</span> <span class="nx">contents</span> <span class="k">of</span> <span class="nx">the</span> <span class="nx">set</span> <span class="nx">object</span> <span class="nx">can</span> <span class="nx">be</span> <span class="nx">iterated</span> <span class="nx">over</span> <span class="nx">using</span> <span class="nx">the</span> <span class="sb">`for&#39; loop..of`</span><span class="p">,</span> <span class="nx">and</span> <span class="nx">through</span> <span class="nx">the</span> <span class="err">&#39;</span><span class="nx">forEach</span><span class="sb">` method:
-</span></span></span><span class="line"><span class="cl"><span class="sb">
-</span></span></span><span class="line"><span class="cl"><span class="sb">``js
-</span></span></span><span class="line"><span class="cl"><span class="sb">let set = new Set([&#34;orange&#34;, &#34;apple&#34;, &#34;banana&#34;]);
-</span></span></span><span class="line"><span class="cl"><span class="sb">for (let value of set) alert(value);
-</span></span></span><span class="line"><span class="cl"><span class="sb">// same with forEach:
-</span></span></span><span class="line"><span class="cl"><span class="sb">set.forEach((value, valueAgain, set) =&gt; {
-</span></span></span><span class="line"><span class="cl"><span class="sb">alert(value);
-</span></span></span><span class="line"><span class="cl"><span class="sb">});
-</span></span></span></code></pre></div><p>Interesting fact: the function passed to the <code>forEach</code> for the Set object takes three arguments: the value of <code>value', again the same value of </code>valueAgain&rsquo;, and only then the object itself. The value actually appears twice in the argument list.</p>
-<p>This is done for compatibility with the Map object, where the callback for <code>forEach' also takes three arguments. Although it may look unusual, this structure makes it easy to switch between using </code>Map<code>and</code>Set'.</p>
+</span></span></code></pre></div><h3 id="iterating-through-the-set-object">Iterating through the Set object</h3>
+<p>The contents of the set object can be iterated over using the <code>for' loop..of</code>, and through the <code>forEach</code> method:</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-js" data-lang="js"><span class="line"><span class="cl"><span class="kd">let</span> <span class="nx">set</span> <span class="o">=</span> <span class="k">new</span> <span class="nx">Set</span><span class="p">([</span><span class="s2">&#34;orange&#34;</span><span class="p">,</span> <span class="s2">&#34;apple&#34;</span><span class="p">,</span> <span class="s2">&#34;banana&#34;</span><span class="p">]);</span>
+</span></span><span class="line"><span class="cl"><span class="k">for</span> <span class="p">(</span><span class="kd">let</span> <span class="nx">value</span> <span class="k">of</span> <span class="nx">set</span><span class="p">)</span> <span class="nx">alert</span><span class="p">(</span><span class="nx">value</span><span class="p">);</span>
+</span></span><span class="line"><span class="cl"><span class="c1">// same with forEach:
+</span></span></span><span class="line"><span class="cl"><span class="c1"></span><span class="nx">set</span><span class="p">.</span><span class="nx">forEach</span><span class="p">((</span><span class="nx">value</span><span class="p">,</span> <span class="nx">valueAgain</span><span class="p">,</span> <span class="nx">set</span><span class="p">)</span> <span class="p">=&gt;</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl"><span class="nx">alert</span><span class="p">(</span><span class="nx">value</span><span class="p">);</span>
+</span></span><span class="line"><span class="cl"><span class="p">});</span>
+</span></span></code></pre></div><p>Interesting fact: the function passed to the <code>forEach</code> for the Set object takes three arguments: the value of <code>value', again the same value of </code>valueAgain&rsquo;, and only then the object itself. The value actually appears twice in the argument list.</p>
+<p>This is done for compatibility with the Map object, where the callback for <code>forEach</code> also takes three arguments. Although it may look unusual, this structure makes it easy to switch between using <code>Map</code> and `Set'.</p>
 <p>The Set object has the same iteration methods as the Map.:</p>
 <ul>
-<li>`set.values()&rsquo; — returns an iterable object containing the values of the set;</li>
-<li><code>set.keys()' — works the same way as </code>set.values()&rsquo;, added for compatibility with Map;</li>
-<li><code>set.entries()' — returns a traversable object containing pairs of the form </code>[value, value]`, also for compatibility with Map.</li>
+<li><code>set.values()</code> — returns an iterable object containing the values of the set;</li>
+<li><code>set.keys()</code> — works the same way as <code>set.values()</code>, added for compatibility with Map;</li>
+<li><code>set.entries()</code> — returns a traversable object containing pairs of the form <code>[value, value]</code>, also for compatibility with Map.</li>
 </ul>
 </div>
     </div>

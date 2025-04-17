@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
-<head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script>
+<head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=63607&amp;path=livereload" data-no-instant defer></script>
     <link rel="icon" type="image/x-icon" href="../images/favicon.ico">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -100,24 +100,17 @@ like a string or a number.</p>
 <p>There are only 8 types of data.</p>
 <p>A variable can store any type of data.</p>
 <p>In one section of the code, a string can be stored in a variable, and in another, a number.</p>
-<p>``js
-let some = &lsquo;123&rsquo;; // String<br>
-some = 123; // Number</p>
-<pre tabindex="0"><code>
-Because of this feature, the JavaScript programming language is called &#34;dynamically
-typed&#34;.
-
-This means that although data types exist, variables are not bound to any
-particular type.
-
-### Number or number
-
-The numeric data type represents both integers and floating point numbers
-
-``js
-let number = 123; // Prime number  
-    number = 123.456; // Floating point number
-</code></pre><p>There are many operations available in JavaScript for working with numbers, such as multiplication
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-js" data-lang="js"><span class="line"><span class="cl"><span class="kd">let</span> <span class="nx">some</span> <span class="o">=</span> <span class="s1">&#39;123&#39;</span><span class="p">;</span> <span class="c1">// String   
+</span></span></span><span class="line"><span class="cl"><span class="c1"></span>    <span class="nx">some</span> <span class="o">=</span> <span class="mi">123</span><span class="p">;</span> <span class="c1">// Number
+</span></span></span></code></pre></div><p>Because of this feature, the JavaScript programming language is called &ldquo;dynamically
+typed&rdquo;.</p>
+<p>This means that although data types exist, variables are not bound to any
+particular type.</p>
+<h3 id="number-or-number">Number or number</h3>
+<p>The numeric data type represents both integers and floating point numbers</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-js" data-lang="js"><span class="line"><span class="cl"><span class="kd">let</span> <span class="nx">number</span> <span class="o">=</span> <span class="mi">123</span><span class="p">;</span> <span class="c1">// Prime number  
+</span></span></span><span class="line"><span class="cl"><span class="c1"></span>    <span class="nx">number</span> <span class="o">=</span> <span class="mf">123.456</span><span class="p">;</span> <span class="c1">// Floating point number
+</span></span></span></code></pre></div><p>There are many operations available in JavaScript for working with numbers, such as multiplication
 &ldquo;*&rdquo;, division &ldquo;/&rdquo;, addition &ldquo;+&rdquo;, subtraction &ldquo;-&rdquo; and others.</p>
 <p>In addition to ordinary numbers, there are also so-called &ldquo;special numeric values&rdquo;,
 such as &ldquo;Infinity&rdquo;, &ldquo;-Infinity&rdquo; and &ldquo;NaN&rdquo;, which refer to the data type of numbers.</p>
@@ -136,103 +129,76 @@ NaN - stands for - Not a number
 <div class="highlight"><pre tabindex="0" class="chroma"><code class="language-js" data-lang="js"><span class="line"><span class="cl"><span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span> <span class="kc">NaN</span> <span class="o">+</span> <span class="mi">1</span> <span class="p">);</span> <span class="c1">// NaN    
 </span></span></span><span class="line"><span class="cl"><span class="c1"></span><span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span> <span class="mi">3</span> <span class="o">*</span> <span class="kc">NaN</span> <span class="p">);</span> <span class="c1">// NaN
 </span></span></span><span class="line"><span class="cl"><span class="c1"></span><span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span> <span class="s2">&#34;not a number&#34;</span> <span class="o">/</span> <span class="mi">2</span> <span class="o">-</span> <span class="mi">1</span> <span class="p">);</span> <span class="c1">// NaN
-</span></span></span><span class="line"><span class="cl"><span class="c1"></span><span class="sb">``</span>
-</span></span><span class="line"><span class="cl">
-</span></span><span class="line"><span class="cl"><span class="nx">If</span> <span class="kc">NaN</span> <span class="nx">is</span> <span class="nx">present</span> <span class="k">in</span> <span class="nx">the</span> <span class="nx">mathematical</span> <span class="nx">expression</span><span class="p">,</span> <span class="nx">it</span> <span class="kr">extends</span> <span class="nx">to</span> <span class="nx">the</span> <span class="nx">entire</span> <span class="nx">result</span><span class="p">.</span>
-</span></span><span class="line"><span class="cl">
-</span></span><span class="line"><span class="cl"><span class="o">&lt;</span><span class="nx">p</span> <span class="kr">class</span><span class="o">=</span><span class="s2">&#34;gray&#34;</span><span class="o">&gt;</span>
-</span></span><span class="line"><span class="cl"><span class="nx">There</span> <span class="nx">is</span> <span class="nx">only</span> <span class="nx">one</span> <span class="nx">exception</span><span class="o">:</span> 
-</span></span><span class="line"><span class="cl"><span class="o">&lt;</span><span class="nx">br</span> <span class="o">/&gt;</span>
-</span></span><span class="line"><span class="cl"><span class="kc">NaN</span> <span class="o">**</span> <span class="mi">0</span> <span class="nx">is</span> <span class="nx">equal</span> <span class="nx">to</span> <span class="mi">1</span>
-</span></span><span class="line"><span class="cl"><span class="o">&lt;</span><span class="err">/p&gt;</span>
-</span></span><span class="line"><span class="cl">
-</span></span><span class="line"><span class="cl"><span class="err">###</span> <span class="nx">BigInt</span>
-</span></span><span class="line"><span class="cl">
-</span></span><span class="line"><span class="cl"><span class="nx">In</span> <span class="nx">JavaScript</span><span class="p">,</span> <span class="nx">the</span> <span class="nx">number</span> <span class="nx">type</span> <span class="nx">cannot</span> <span class="nx">safely</span> <span class="nx">handle</span> <span class="nx">numbers</span> <span class="nx">greater</span> <span class="nx">than</span> <span class="p">(</span><span class="mi">2</span><span class="o">^</span><span class="mi">53</span> <span class="o">-</span><span class="mi">1</span><span class="p">)(</span><span class="nx">i</span><span class="p">.</span><span class="nx">e</span><span class="p">.</span> <span class="mi">9007199254740991</span><span class="p">)</span> <span class="nx">or</span> <span class="nx">less</span> <span class="nx">than</span> <span class="o">-</span><span class="p">(</span><span class="mi">2</span><span class="o">^</span><span class="mi">53</span> <span class="o">-</span><span class="mi">1</span><span class="p">)</span> <span class="k">for</span> <span class="nx">negative</span> <span class="nx">numbers</span><span class="p">.</span>
-</span></span><span class="line"><span class="cl">
-</span></span><span class="line"><span class="cl"><span class="nx">Technically</span><span class="p">,</span> <span class="nx">the</span> <span class="nx">number</span> <span class="nx">type</span> <span class="nx">is</span> <span class="nx">capable</span> <span class="k">of</span> <span class="nx">storing</span> <span class="nx">very</span> <span class="nx">large</span> <span class="nx">integers</span> <span class="p">(</span><span class="nx">up</span> <span class="nx">to</span> <span class="mf">1.7976931348623157</span><span class="o">*</span><span class="mi">10</span><span class="o">^</span><span class="mi">308</span><span class="p">),</span> <span class="nx">but</span> <span class="nx">an</span> <span class="nx">accuracy</span> <span class="nx">error</span> <span class="nx">occurs</span> <span class="nx">outside</span> <span class="nx">the</span> <span class="nx">safe</span> <span class="nx">range</span> <span class="k">of</span> <span class="nx">integers</span> <span class="err">±</span><span class="p">(</span><span class="mi">2</span><span class="o">^</span><span class="mi">53</span> <span class="o">-</span><span class="mi">1</span><span class="p">),</span> <span class="nx">since</span> <span class="nx">not</span> <span class="nx">all</span> <span class="nx">digits</span> <span class="nx">can</span> <span class="nx">fit</span> <span class="nx">into</span> <span class="nx">a</span> <span class="nx">fixed</span> <span class="mi">64</span><span class="o">-</span><span class="nx">bit</span> <span class="nx">memory</span><span class="p">.</span> <span class="nx">As</span> <span class="nx">a</span> <span class="nx">result</span><span class="p">,</span> <span class="nx">only</span> <span class="nx">an</span> <span class="s2">&#34;approximate&#34;</span> <span class="nx">value</span> <span class="nx">can</span> <span class="nx">be</span> <span class="nx">stored</span><span class="p">.</span>
-</span></span><span class="line"><span class="cl">
-</span></span><span class="line"><span class="cl"><span class="nx">For</span> <span class="nx">example</span><span class="p">,</span> <span class="nx">these</span> <span class="nx">two</span> <span class="nx">different</span> <span class="nx">calculations</span> <span class="nx">will</span> <span class="nx">give</span> <span class="nx">the</span> <span class="nx">same</span> <span class="nx">result</span><span class="p">.</span>
-</span></span><span class="line"><span class="cl">
-</span></span><span class="line"><span class="cl"><span class="sb">```js
-</span></span></span><span class="line"><span class="cl"><span class="sb">console.log(9007199254740991 + 1); // 9007199254740992    
-</span></span></span><span class="line"><span class="cl"><span class="sb">console.log(9007199254740991 + 2); // 9007199254740992
+</span></span></span></code></pre></div><p>If NaN is present in the mathematical expression, it extends to the entire result.</p>
+<p class="gray">
+There is only one exception: 
+<br />
+NaN ** 0 is equal to 1
+</p>
+<h3 id="bigint">BigInt</h3>
+<p>In JavaScript, the number type cannot safely handle numbers greater than (2^53 -1)(i.e. 9007199254740991) or less than -(2^53 -1) for negative numbers.</p>
+<p>Technically, the number type is capable of storing very large integers (up to 1.7976931348623157*10^308), but an accuracy error occurs outside the safe range of integers ±(2^53 -1), since not all digits can fit into a fixed 64-bit memory. As a result, only an &ldquo;approximate&rdquo; value can be stored.</p>
+<p>For example, these two different calculations will give the same result.</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-js" data-lang="js"><span class="line"><span class="cl"><span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="mi">9007199254740991</span> <span class="o">+</span> <span class="mi">1</span><span class="p">);</span> <span class="c1">// 9007199254740992    
+</span></span></span><span class="line"><span class="cl"><span class="c1"></span><span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="mi">9007199254740991</span> <span class="o">+</span> <span class="mi">2</span><span class="p">);</span> <span class="c1">// 9007199254740992
 </span></span></span></code></pre></div><p class="gray">
 At the moment, BigInt is supported only in Firefox, Chrome, Edge, and Safari browsers, but it is not supported in IE.
 </p>
 <h3 id="string-or-string">String or string</h3>
 <p>In JavaScript, a string must be enclosed in quotation marks.</p>
-<p>``js
-let str = &ldquo;Hello, friend!&rdquo;;
-let str2 = &lsquo;Single quotes are also suitable&rsquo;;
-let phrase = <code>Backquotes allow embedding variables ${str}</code>;</p>
-<pre tabindex="0"><code>
-There are 3 types of buckets in JavaScript:
-
-- 1 Single forging: &#34;
-- 2 Double picks: &#34;&#34;
-- 3 Reverse picks: `
-
-Double and single quotes are considered &#34;simple&#34; and have no differences.
-
-Backquotes, however, have extended functionality. They allow
-you to embed expressions inside a string by enclosing them in ${...}.
-
-```js
-let name = &#34;Dxrkd3v&#34;;
-
-// Insert
-the console.log variable( `Hello, ${name}!` ); // Hello, Dxrkd3v!    
-    
-// Insert the expression
-console.log( `result: ${1 + 2}` ); // Result: 3
-</code></pre><p class="gray">
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-js" data-lang="js"><span class="line"><span class="cl"><span class="kd">let</span> <span class="nx">str</span> <span class="o">=</span> <span class="s2">&#34;Hello, friend!&#34;</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl"><span class="kd">let</span> <span class="nx">str2</span> <span class="o">=</span> <span class="s1">&#39;Single quotes are also suitable&#39;</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl"><span class="kd">let</span> <span class="nx">phrase</span> <span class="o">=</span> <span class="sb">`Backquotes allow embedding variables </span><span class="si">${</span><span class="nx">str</span><span class="si">}</span><span class="sb">`</span><span class="p">;</span>   
+</span></span></code></pre></div><p>There are 3 types of buckets in JavaScript:</p>
+<ul>
+<li>1 Single forging: &quot;</li>
+<li>2 Double picks: &quot;&quot;</li>
+<li>3 Reverse picks: `</li>
+</ul>
+<p>Double and single quotes are considered &ldquo;simple&rdquo; and have no differences.</p>
+<p>Backquotes, however, have extended functionality. They allow
+you to embed expressions inside a string by enclosing them in ${&hellip;}.</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-js" data-lang="js"><span class="line"><span class="cl"><span class="kd">let</span> <span class="nx">name</span> <span class="o">=</span> <span class="s2">&#34;Cxd3&#34;</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="c1">// Insert
+</span></span></span><span class="line"><span class="cl"><span class="c1"></span><span class="nx">the</span> <span class="nx">console</span><span class="p">.</span><span class="nx">log</span> <span class="nx">variable</span><span class="p">(</span> <span class="sb">`Hello, </span><span class="si">${</span><span class="nx">name</span><span class="si">}</span><span class="sb">!`</span> <span class="p">);</span> <span class="c1">// Hello, Cxd3!    
+</span></span></span><span class="line"><span class="cl"><span class="c1"></span>    
+</span></span><span class="line"><span class="cl"><span class="c1">// Insert the expression
+</span></span></span><span class="line"><span class="cl"><span class="c1"></span><span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span> <span class="sb">`result: </span><span class="si">${</span><span class="mi">1</span> <span class="o">+</span> <span class="mi">2</span><span class="si">}</span><span class="sb">`</span> <span class="p">);</span> <span class="c1">// Result: 3
+</span></span></span></code></pre></div><p class="gray">
 Reverse pickings are also called backtick and are used for interpolation.
 </p>
 <h3 id="boolean-or-boolean-logical-type">Boolean or Boolean (logical) type</h3>
 <p>The boolean type can take only two values: true and false.</p>
 <p>This type is usually used to store yes/no values: true means &ldquo;yes, true&rdquo;
 and false means &ldquo;no, false&rdquo;.</p>
-<p>``js
-let nameFieldChecked = true; // yes, the field is marked
-let ageFieldChecked = false; // no, the field is not marked</p>
-<pre tabindex="0"><code>
-A Boolean data type can also be the result of comparison operations.:
-
-``js
-let isGreater = 4 &gt; 1;
-alert( isGreater ); // true (the result of the comparison will be &#34;yes&#34;)
-``
-
-&lt;p class=&#34;gray&#34;&gt;The topic of the Boolean data type will be covered in more detail later&lt;/p&gt;
-
-### Null data type
-
-The special null value does not apply to any of the above types.
-
-It forms a separate type that includes only the null value.
-
-```js
-let age = null;
-</code></pre><p>In JavaScript, null is not a &ldquo;reference to a non-existent object&rdquo; or a &ldquo;null
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-js" data-lang="js"><span class="line"><span class="cl"><span class="kd">let</span> <span class="nx">nameFieldChecked</span> <span class="o">=</span> <span class="kc">true</span><span class="p">;</span> <span class="c1">// yes, the field is marked
+</span></span></span><span class="line"><span class="cl"><span class="c1"></span><span class="kd">let</span> <span class="nx">ageFieldChecked</span> <span class="o">=</span> <span class="kc">false</span><span class="p">;</span> <span class="c1">// no, the field is not marked
+</span></span></span></code></pre></div><p>A Boolean data type can also be the result of comparison operations.:</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-js" data-lang="js"><span class="line"><span class="cl"><span class="kd">let</span> <span class="nx">isGreater</span> <span class="o">=</span> <span class="mi">4</span> <span class="o">&gt;</span> <span class="mi">1</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl"><span class="nx">alert</span><span class="p">(</span> <span class="nx">isGreater</span> <span class="p">);</span> <span class="c1">// true (the result of the comparison will be &#34;yes&#34;)
+</span></span></span></code></pre></div><p class="gray">
+The topic of the Boolean data type will be covered in more detail later
+</p>
+<h3 id="null-data-type">Null data type</h3>
+<p>The special null value does not apply to any of the above types.</p>
+<p>It forms a separate type that includes only the null value.</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-js" data-lang="js"><span class="line"><span class="cl"><span class="kd">let</span> <span class="nx">age</span> <span class="o">=</span> <span class="kc">null</span><span class="p">;</span>
+</span></span></code></pre></div><p>In JavaScript, null is not a &ldquo;reference to a non-existent object&rdquo; or a &ldquo;null
 pointer&rdquo;, as in some other languages.</p>
 <p>It&rsquo;s just a special value that means &ldquo;nothing&rdquo;, &ldquo;empty&rdquo;, or
 &ldquo;value unknown&rdquo;.</p>
 <h3 id="the-value-of-undefined">The value of &ldquo;undefined&rdquo;</h3>
 <p>The undefined special value creates a type from itself in the same way as null.</p>
-<p>It indicates that &rsquo;no value has been assigned&rsquo;.</p>
+<p>It indicates that &rsquo;no value has been assigned'.</p>
 <p>If a variable is declared, but no value is assigned to it, then its the value will be undefined:</p>
 <div class="highlight"><pre tabindex="0" class="chroma"><code class="language-js" data-lang="js"><span class="line"><span class="cl"><span class="kd">let</span> <span class="nx">age</span><span class="p">;</span>
 </span></span><span class="line"><span class="cl"><span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nx">age</span><span class="p">);</span> <span class="c1">// outputs &#34;undefined&#34;
-</span></span></span><span class="line"><span class="cl"><span class="c1"></span><span class="sb">``</span>
-</span></span><span class="line"><span class="cl">
-</span></span><span class="line"><span class="cl"><span class="nx">You</span> <span class="nx">can</span> <span class="nx">also</span> <span class="nx">force</span> <span class="nx">the</span> <span class="kc">undefined</span> <span class="nx">value</span> <span class="nx">to</span> <span class="nx">be</span> <span class="nx">assigned</span> <span class="nx">to</span> <span class="nx">any</span> <span class="nx">variable</span><span class="p">.</span>
-</span></span><span class="line"><span class="cl">
-</span></span><span class="line"><span class="cl"><span class="sb">```js
-</span></span></span><span class="line"><span class="cl"><span class="sb">let age = 35;
-</span></span></span><span class="line"><span class="cl"><span class="sb">// changing the value to undefined
-</span></span></span><span class="line"><span class="cl"><span class="sb">age = undefined;
-</span></span></span><span class="line"><span class="cl"><span class="sb">console.log(age); // &#34;undefined&#34;
+</span></span></span></code></pre></div><p>You can also force the undefined value to be assigned to any variable.</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-js" data-lang="js"><span class="line"><span class="cl"><span class="kd">let</span> <span class="nx">age</span> <span class="o">=</span> <span class="mi">35</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl"><span class="c1">// changing the value to undefined
+</span></span></span><span class="line"><span class="cl"><span class="c1"></span><span class="nx">age</span> <span class="o">=</span> <span class="kc">undefined</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl"><span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nx">age</span><span class="p">);</span> <span class="c1">// &#34;undefined&#34;
 </span></span></span></code></pre></div><p>However, this approach is not recommended.</p>
 <p>Null is usually used to assign an &ldquo;empty&rdquo; or &ldquo;unknown&rdquo; value to a variable.</p>
 <p>While undefined is used to check whether the variable has been initialized.</p>

@@ -8,8 +8,6 @@ The `append()` and `prepend()` methods allow you to insert elements or text
 at the **end** or the **beginning** of another element.  
 They provide a cleaner and more convenient alternative to `appendChild()`.
 
----
-
 ### `element.append()` — Add to the End
 
 The `append()` method inserts content at the **end** of an element.  
@@ -20,6 +18,7 @@ let container = document.getElementById('box');
 let newDiv = document.createElement('div');
 newDiv.textContent = 'New element';
 container.append(newDiv, ' And this is just text');
+```
 
 ### `element.prepend()` — Add to the Beginning
 

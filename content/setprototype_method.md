@@ -4,7 +4,7 @@ title = 'The setPrototypeOf method in JavaScript'
 categories = [ "javascript" ]
 +++
 
-The `Object.setPrototypeOf()' method`in JavaScript, it allows you to dynamically set the prototype `[[Prototype]]` for the specified object. This is a way to change the prototype of an object after it is created.
+The `Object.setPrototypeOf()` method in JavaScript, it allows you to dynamically set the prototype `[[Prototype]]` for the specified object. This is a way to change the prototype of an object after it is created.
 
 ```js
 Object.setPrototypeOf(obj, prototype);
@@ -35,7 +35,7 @@ Object.setPrototypeOf(girl, skillsOfGirls);
 //We turn to the methods and use
 girl.intro(); // Hi, my name is Elle
 girl.dance(); // Elle dances"
-``
+```
 
 Here, the `girl` object gets access to the `intro` and `dance` methods through the 'skillsOfGirls` prototype
 

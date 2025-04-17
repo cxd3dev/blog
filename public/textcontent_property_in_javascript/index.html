@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
-<head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script>
+<head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=63607&amp;path=livereload" data-no-instant defer></script>
     <link rel="icon" type="image/x-icon" href="../images/favicon.ico">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -95,23 +95,15 @@
             <time class="h5 gray title__date">06 March 2025</time>
         
 
-        <div><p>The <code>textContent' property allows you to get or change the text inside the element, ignoring the </code>HTML markup&rsquo;. It is useful when you need to work only with text, without worrying about tags.</p>
-<p>``js
-element.textContent = &lsquo;New text&rsquo;;</p>
-<pre tabindex="0"><code>
-Example of getting text from inside an element
-
-```js
-let text = document.getElementById(&#39;box&#39;).textContent;
-console.log(text);
-// Outputs all the text inside the #box
-``
-
-An example of changing the text inside an element
-
-```js
-document.getElementById(&#39;box&#39;).textContent = &#39;Updated text&#39;;
-</code></pre><p>Resetting the content of the element, you just need to pass an empty string.</p>
+        <div><p>The <code>textContent</code> property allows you to get or change the text inside the element, ignoring the <code>HTML markup</code>. It is useful when you need to work only with text, without worrying about tags.</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-js" data-lang="js"><span class="line"><span class="cl"><span class="nx">element</span><span class="p">.</span><span class="nx">textContent</span> <span class="o">=</span> <span class="s1">&#39;New text&#39;</span><span class="p">;</span>
+</span></span></code></pre></div><p>Example of getting text from inside an element</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-js" data-lang="js"><span class="line"><span class="cl"><span class="kd">let</span> <span class="nx">text</span> <span class="o">=</span> <span class="nb">document</span><span class="p">.</span><span class="nx">getElementById</span><span class="p">(</span><span class="s1">&#39;box&#39;</span><span class="p">).</span><span class="nx">textContent</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl"><span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nx">text</span><span class="p">);</span>
+</span></span><span class="line"><span class="cl"><span class="c1">// Outputs all the text inside the #box
+</span></span></span></code></pre></div><p>An example of changing the text inside an element</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-js" data-lang="js"><span class="line"><span class="cl"><span class="nb">document</span><span class="p">.</span><span class="nx">getElementById</span><span class="p">(</span><span class="s1">&#39;box&#39;</span><span class="p">).</span><span class="nx">textContent</span> <span class="o">=</span> <span class="s1">&#39;Updated text&#39;</span><span class="p">;</span>
+</span></span></code></pre></div><p>Resetting the content of the element, you just need to pass an empty string.</p>
 <div class="highlight"><pre tabindex="0" class="chroma"><code class="language-js" data-lang="js"><span class="line"><span class="cl"><span class="nb">document</span><span class="p">.</span><span class="nx">getElementById</span><span class="p">(</span><span class="s1">&#39;box&#39;</span><span class="p">).</span><span class="nx">textContent</span> <span class="o">=</span> <span class="s1">&#39;&#39;</span><span class="p">;</span>
 </span></span></code></pre></div><p>The <code>textContent</code> property helps you work with text without the risk of inserting malicious code. If you don&rsquo;t need to render the <code>HTML</code>, but just change or receive the text, then you should remember the syntax.</p>
 </div>

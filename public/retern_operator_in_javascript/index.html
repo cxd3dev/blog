@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
-<head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script>
+<head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=63607&amp;path=livereload" data-no-instant defer></script>
     <link rel="icon" type="image/x-icon" href="../images/favicon.ico">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -95,26 +95,22 @@
             <time class="h5 gray title__date">15 January 2025</time>
         
 
-        <div><p>The <code>return' operator in JavaScript is used to return a value from a function. When the interpreter encounters a </code>return<code>, the function execution stops, and control returns to where the function was called. If a value is specified after </code>return`, it is returned as the result of the function.</p>
-<p>&lsquo;return<code>can return any value: a number, string, object, array, other function, and even</code>null<code>or</code>undefined&rsquo;.</p>
+        <div><p>The <code>return</code> operator in JavaScript is used to return a value from a function. When the interpreter encounters a <code>return</code>, the function execution stops, and control returns to where the function was called. If a value is specified after <code>return</code>, it is returned as the result of the function.</p>
+<p><code>return</code> can return any value: a number, string, object, array, other function, and even <code>null</code> or <code>undefined</code>.</p>
 <p>As soon as the <code>return</code> is executed, the function immediately completes its work. The code that is after the `return&rsquo; is not executed.</p>
-<p>If <code>return</code> is used without a value, the function returns `undefined'.</p>
+<p>If <code>return</code> is used without a value, the function returns <code>undefined</code>.</p>
 <div class="highlight"><pre tabindex="0" class="chroma"><code class="language-js" data-lang="js"><span class="line"><span class="cl"><span class="kd">function</span> <span class="nx">functionName</span><span class="p">()</span> <span class="p">{</span>
 </span></span><span class="line"><span class="cl"><span class="c1">// Function code
 </span></span></span><span class="line"><span class="cl"><span class="c1"></span>  <span class="k">return</span> <span class="nx">value</span><span class="p">;</span> 
 </span></span><span class="line"><span class="cl">  <span class="c1">// Return the value and end the function
 </span></span></span><span class="line"><span class="cl"><span class="c1"></span><span class="p">}</span>
-</span></span><span class="line"><span class="cl"><span class="sb">``</span>
+</span></span></code></pre></div><p>Returning a number:</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-js" data-lang="js"><span class="line"><span class="cl"><span class="kd">function</span> <span class="nx">sum</span><span class="p">(</span><span class="nx">a</span><span class="p">,</span> <span class="nx">b</span><span class="p">)</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">  <span class="k">return</span> <span class="nx">a</span> <span class="o">+</span> <span class="nx">b</span><span class="p">;</span> <span class="c1">// Returns the sum of a and b
+</span></span></span><span class="line"><span class="cl"><span class="c1"></span><span class="p">}</span>
 </span></span><span class="line"><span class="cl">
-</span></span><span class="line"><span class="cl"><span class="nx">Returning</span> <span class="nx">a</span> <span class="nx">number</span><span class="o">:</span>
-</span></span><span class="line"><span class="cl">
-</span></span><span class="line"><span class="cl"><span class="sb">```js
-</span></span></span><span class="line"><span class="cl"><span class="sb">function sum(a, b) {
-</span></span></span><span class="line"><span class="cl"><span class="sb">  return a + b; // Returns the sum of a and b
-</span></span></span><span class="line"><span class="cl"><span class="sb">}
-</span></span></span><span class="line"><span class="cl"><span class="sb">
-</span></span></span><span class="line"><span class="cl"><span class="sb">const result = sum(2, 3); // result = 5
-</span></span></span><span class="line"><span class="cl"><span class="sb">console.log(result); // Outputs: 5
+</span></span><span class="line"><span class="cl"><span class="kr">const</span> <span class="nx">result</span> <span class="o">=</span> <span class="nx">sum</span><span class="p">(</span><span class="mi">2</span><span class="p">,</span> <span class="mi">3</span><span class="p">);</span> <span class="c1">// result = 5
+</span></span></span><span class="line"><span class="cl"><span class="c1"></span><span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nx">result</span><span class="p">);</span> <span class="c1">// Outputs: 5
 </span></span></span></code></pre></div><p>String Return:</p>
 <div class="highlight"><pre tabindex="0" class="chroma"><code class="language-js" data-lang="js"><span class="line"><span class="cl"><span class="kd">function</span> <span class="nx">greet</span><span class="p">(</span><span class="nx">name</span><span class="p">)</span> <span class="p">{</span>
 </span></span><span class="line"><span class="cl">  <span class="k">return</span> <span class="s2">&#34;Hello, &#34;</span> <span class="o">+</span> <span class="nx">name</span> <span class="o">+</span><span class="s2">&#34;!&#34;</span><span class="p">;</span>
@@ -122,42 +118,34 @@
 </span></span><span class="line"><span class="cl">
 </span></span><span class="line"><span class="cl"><span class="kr">const</span> <span class="nx">message</span> <span class="o">=</span> <span class="nx">greet</span><span class="p">(</span><span class="s2">&#34;Elle&#34;</span><span class="p">);</span> <span class="c1">// message = &#34;Hello, Elle!&#34;
 </span></span></span><span class="line"><span class="cl"><span class="c1"></span><span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nx">message</span><span class="p">);</span> <span class="c1">// Outputs: &#34;Hello, Elle!&#34;
-</span></span></span><span class="line"><span class="cl"><span class="c1"></span><span class="sb">``</span>
-</span></span><span class="line"><span class="cl">
-</span></span><span class="line"><span class="cl"><span class="nb">Object</span> <span class="k">return</span><span class="o">:</span>
-</span></span><span class="line"><span class="cl"><span class="sb">``</span><span class="nx">js</span>
-</span></span><span class="line"><span class="cl"><span class="kd">function</span> <span class="nx">createUser</span><span class="p">(</span><span class="nx">name</span><span class="p">,</span> <span class="nx">age</span><span class="p">)</span> <span class="p">{</span>
+</span></span></span></code></pre></div><p>Object return:</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-js" data-lang="js"><span class="line"><span class="cl"><span class="kd">function</span> <span class="nx">createUser</span><span class="p">(</span><span class="nx">name</span><span class="p">,</span> <span class="nx">age</span><span class="p">)</span> <span class="p">{</span>
 </span></span><span class="line"><span class="cl">  <span class="k">return</span> <span class="p">{</span> <span class="nx">name</span><span class="o">:</span> <span class="nx">name</span><span class="p">,</span> <span class="nx">age</span><span class="o">:</span> <span class="nx">age</span> <span class="p">};</span> <span class="c1">// Returns an object
 </span></span></span><span class="line"><span class="cl"><span class="c1"></span><span class="p">}</span>
 </span></span><span class="line"><span class="cl">
 </span></span><span class="line"><span class="cl"><span class="kr">const</span> <span class="nx">user</span> <span class="o">=</span> <span class="nx">createUser</span><span class="p">(</span><span class="s2">&#34;Mia&#34;</span><span class="p">,</span> <span class="mi">25</span><span class="p">);</span>
 </span></span><span class="line"><span class="cl"><span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nx">user</span><span class="p">);</span> <span class="c1">// Outputs: { name: &#34;Mia&#34;, age: 25 }
-</span></span></span></code></pre></div><p>Return without value:
-``js
-function doSomething() {
-console.log(&ldquo;Doing something&hellip;&rdquo;);
-return; // The function terminates, returns undefined
-console.log(&ldquo;This code will not execute&rdquo;);
-}</p>
-<p>const result = doSomething(); // result = undefined
-console.log(result); // Outputs: undefined</p>
-<pre tabindex="0"><code>
-`return` can be used to terminate a function early if no further code execution is required.
-
-```js
-function checkAge(age) {
-  if (age &lt; 18) {
-return &#34;Access denied&#34;; // The function ends if age &lt; 18
-}
-return &#34;Access allowed&#34;; // Executed if age &gt;= 18
-}
-
-console.log(checkOut(15)); // Outputs: &#34;Access denied&#34;
-console.log(checkOut(20)); // Outputs: &#34;Access is allowed`
-&#34;`
-
-Using return makes functions more flexible and powerful, allowing them to interact with the rest of the code.
-</code></pre></div>
+</span></span></span></code></pre></div><p>Return without value:</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-js" data-lang="js"><span class="line"><span class="cl"><span class="kd">function</span> <span class="nx">doSomething</span><span class="p">()</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl"><span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="s2">&#34;Doing something...&#34;</span><span class="p">);</span>
+</span></span><span class="line"><span class="cl">  <span class="k">return</span><span class="p">;</span> <span class="c1">// The function terminates, returns undefined
+</span></span></span><span class="line"><span class="cl"><span class="c1"></span>  <span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="s2">&#34;This code will not execute&#34;</span><span class="p">);</span>
+</span></span><span class="line"><span class="cl"><span class="p">}</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="kr">const</span> <span class="nx">result</span> <span class="o">=</span> <span class="nx">doSomething</span><span class="p">();</span> <span class="c1">// result = undefined
+</span></span></span><span class="line"><span class="cl"><span class="c1"></span><span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nx">result</span><span class="p">);</span> <span class="c1">// Outputs: undefined
+</span></span></span></code></pre></div><p><code>return</code> can be used to terminate a function early if no further code execution is required.</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-js" data-lang="js"><span class="line"><span class="cl"><span class="kd">function</span> <span class="nx">checkAge</span><span class="p">(</span><span class="nx">age</span><span class="p">)</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">  <span class="k">if</span> <span class="p">(</span><span class="nx">age</span> <span class="o">&lt;</span> <span class="mi">18</span><span class="p">)</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl"><span class="k">return</span> <span class="s2">&#34;Access denied&#34;</span><span class="p">;</span> <span class="c1">// The function ends if age &lt; 18
+</span></span></span><span class="line"><span class="cl"><span class="c1"></span><span class="p">}</span>
+</span></span><span class="line"><span class="cl"><span class="k">return</span> <span class="s2">&#34;Access allowed&#34;</span><span class="p">;</span> <span class="c1">// Executed if age &gt;= 18
+</span></span></span><span class="line"><span class="cl"><span class="c1"></span><span class="p">}</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nx">checkOut</span><span class="p">(</span><span class="mi">15</span><span class="p">));</span> <span class="c1">// Outputs: &#34;Access denied&#34;
+</span></span></span><span class="line"><span class="cl"><span class="c1"></span><span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nx">checkOut</span><span class="p">(</span><span class="mi">20</span><span class="p">));</span> <span class="c1">// Outputs: &#34;Access is allowed&#34;
+</span></span></span></code></pre></div><p>Using return makes functions more flexible and powerful, allowing them to interact with the rest of the code.</p>
+</div>
     </div>
    </div>
 </div>

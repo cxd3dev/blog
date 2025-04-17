@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
-<head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script>
+<head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=63607&amp;path=livereload" data-no-instant defer></script>
     <link rel="icon" type="image/x-icon" href="../images/favicon.ico">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -109,12 +109,9 @@
 </span></span></span><span class="line"><span class="cl"><span class="c1"></span>
 </span></span><span class="line"><span class="cl"><span class="kr">const</span> <span class="nx">greetAnna</span> <span class="o">=</span> <span class="nx">createGreeting</span><span class="p">(</span><span class="s2">&#34;Anna&#34;</span><span class="p">);</span>
 </span></span><span class="line"><span class="cl"><span class="nx">greetAnna</span><span class="p">();</span> <span class="c1">// &#34;Hi, Anna!&#34;
-</span></span></span><span class="line"><span class="cl"><span class="c1"></span><span class="sb">``</span>
-</span></span><span class="line"><span class="cl">
-</span></span><span class="line"><span class="cl"><span class="nx">Here</span><span class="p">,</span> <span class="nx">the</span> <span class="sb">`createGreeting`</span> <span class="kd">function</span> <span class="nx">gets</span> <span class="nx">a</span> <span class="sb">`name`</span>
-</span></span><span class="line"><span class="cl"><span class="nx">and</span> <span class="nx">returns</span> <span class="nx">a</span> <span class="k">new</span> <span class="kd">function</span> <span class="nx">that</span> <span class="nx">simply</span> <span class="nx">outputs</span><span class="o">:</span>
-</span></span><span class="line"><span class="cl"><span class="sb">``</span><span class="nx">js</span>
-</span></span><span class="line"><span class="cl"><span class="nx">Hello</span><span class="p">,</span> <span class="nx">$</span><span class="p">{</span><span class="nx">name</span><span class="p">}</span><span class="o">!</span><span class="p">.</span>
+</span></span></span></code></pre></div><p>Here, the <code>createGreeting</code> function gets a <code>name</code>
+and returns a new function that simply outputs:</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-js" data-lang="js"><span class="line"><span class="cl"><span class="nx">Hello</span><span class="p">,</span> <span class="nx">$</span><span class="p">{</span><span class="nx">name</span><span class="p">}</span><span class="o">!</span><span class="p">.</span>
 </span></span></code></pre></div><p>When we call createGreeting(&ldquo;Elle&rdquo;), the name variable is saved inside.</p>
 <p>Even after createGreeting is completed, the call to greetElle() still &ldquo;remembers&rdquo; the name &ldquo;Ellie&rdquo;.</p>
 <p>JavaScript is designed so that if an internal function uses variables from the external scope, the engine does not delete them.</p>

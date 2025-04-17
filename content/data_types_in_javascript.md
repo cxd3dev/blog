@@ -13,7 +13,7 @@ A variable can store any type of data.
 
 In one section of the code, a string can be stored in a variable, and in another, a number.
 
-``js
+```js
 let some = '123'; // String   
     some = 123; // Number
 ```
@@ -28,7 +28,7 @@ particular type.
 
 The numeric data type represents both integers and floating point numbers
 
-``js
+```js
 let number = 123; // Prime number  
     number = 123.456; // Floating point number
 ```
@@ -70,7 +70,7 @@ The NaN value has the "sticking" property. Any mathematical operation with NaN a
 console.log( NaN + 1 ); // NaN    
 console.log( 3 * NaN ); // NaN
 console.log( "not a number" / 2 - 1 ); // NaN
-``
+```
 
 If NaN is present in the mathematical expression, it extends to the entire result.
 
@@ -101,7 +101,7 @@ At the moment, BigInt is supported only in Firefox, Chrome, Edge, and Safari bro
 
 In JavaScript, a string must be enclosed in quotation marks.
 
-``js
+```js
 let str = "Hello, friend!";
 let str2 = 'Single quotes are also suitable';
 let phrase = `Backquotes allow embedding variables ${str}`;   
@@ -119,10 +119,10 @@ Backquotes, however, have extended functionality. They allow
 you to embed expressions inside a string by enclosing them in ${...}.
 
 ```js
-let name = "Dxrkd3v";
+let name = "Cxd3";
 
 // Insert
-the console.log variable( `Hello, ${name}!` ); // Hello, Dxrkd3v!    
+the console.log variable( `Hello, ${name}!` ); // Hello, Cxd3!    
     
 // Insert the expression
 console.log( `result: ${1 + 2}` ); // Result: 3
@@ -139,19 +139,21 @@ The boolean type can take only two values: true and false.
 This type is usually used to store yes/no values: true means "yes, true"
 and false means "no, false".
 
-``js
+```js
 let nameFieldChecked = true; // yes, the field is marked
 let ageFieldChecked = false; // no, the field is not marked
 ```
 
 A Boolean data type can also be the result of comparison operations.:
 
-``js
+```js
 let isGreater = 4 > 1;
 alert( isGreater ); // true (the result of the comparison will be "yes")
-``
+```
 
-<p class="gray">The topic of the Boolean data type will be covered in more detail later</p>
+<p class="gray">
+The topic of the Boolean data type will be covered in more detail later
+</p>
 
 ### Null data type
 
@@ -180,7 +182,7 @@ If a variable is declared, but no value is assigned to it, then its the value wi
 ```js
 let age;
 console.log(age); // outputs "undefined"
-``
+```
 
 You can also force the undefined value to be assigned to any variable.
 

@@ -18,9 +18,12 @@ The style object contains properties that match CSS styles. However, names are w
 
 | CSS Property      | JavaScript Equivalent        |
 |-------------------|------------------------------|
-| `background-color`| `backgroundColor = 'blue'`   |
-| `font-size`       | `fontSize = '20px'`          |
-| `margin-top`      | `marginTop = '10px'`         |
+| background-color | backgroundColor |
+| font-size | fontSize |
+| margin-top | marginTop |
+
+
+<br />
 
 let box = document.querySelector('.box');
 

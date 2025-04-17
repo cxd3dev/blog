@@ -4,9 +4,9 @@ title = 'The textContent property in JavaScript'
 categories = [ "javascript" ]
 +++
 
-The `textContent' property allows you to get or change the text inside the element, ignoring the `HTML markup'. It is useful when you need to work only with text, without worrying about tags.
+The `textContent` property allows you to get or change the text inside the element, ignoring the `HTML markup`. It is useful when you need to work only with text, without worrying about tags.
 
-``js
+```js
 element.textContent = 'New text';
 ```
 
@@ -16,7 +16,7 @@ Example of getting text from inside an element
 let text = document.getElementById('box').textContent;
 console.log(text);
 // Outputs all the text inside the #box
-``
+```
 
 An example of changing the text inside an element
 

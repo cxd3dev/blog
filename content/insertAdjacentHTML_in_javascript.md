@@ -18,10 +18,10 @@ List of possible values:
 
 | Value           | Where it inserts                    |
 |-----------------|-------------------------------------|
-| `'beforebegin'` | Before the element (outside)        |
-| `'afterbegin'`  | Inside the element, at the beginning|
-| `'beforeend'`   | Inside the element, at the end      |
-| `'afterend'`    | After the element (outside)         |
+| beforebegin | Before the element (outside)        |
+| afterbegin | Inside the element, at the beginning|
+| beforeend | Inside the element, at the end      |
+| afterend | After the element (outside)         |
 
 <br />
 

@@ -6,9 +6,9 @@ categories = [ "javascript" ]
 
 In JavaScript, arguments are the values passed into a function when it is called. They allow functions to receive and work with data. Arguments can be of any type: numbers, strings, objects, arrays, functions, and so on.
 
-There is a distinction between *parameters* and *arguments* in JavaScript:
+There is a distinction between *parameters* and arguments in JavaScript:
 
-**Function parameters** are the variables listed in the function definition. They are placeholders used to receive the arguments passed during a function call.
+Function parameters are the variables listed in the function definition. They are placeholders used to receive the arguments passed during a function call.
 
 ```js
 function greet(name) { // name — parameter
@@ -22,13 +22,7 @@ Function arguments are the actual values provided when the function is called.
 greet("Elle"); // "Elle" — argument
 ```
 
-Arguments Are Passed by Value
-
-    Primitive types (numbers, strings, booleans)
-    are passed by value. This means the function gets a copy, and any changes do not affect the original variable.
-
-    Objects and arrays are passed by reference.
-    The function works with the original object, so any changes will affect it outside the function.
+Arguments Are Passed by Value - Primitive types (numbers, strings, booleans) are passed by value. This means the function gets a copy, and any changes do not affect the original variable. Objects and arrays are passed by reference. The function works with the original object, so any changes will affect it outside the function.
 
 ```js
 function changeValue(a, b) {
@@ -44,11 +38,7 @@ console.log(num);       // 5 (unchanged)
 console.log(obj.value); // 20 (modified)
 ```
 
-Functions Can Accept Any Number of Arguments
-
-    If more arguments are passed than parameters, the extra ones are ignored.
-
-    If fewer arguments are passed, the missing parameters are set to undefined.
+Functions Can Accept Any Number of Arguments - If more arguments are passed than parameters, the extra ones are ignored. If fewer arguments are passed, the missing parameters are set to undefined.
 
 ```js
 function sum(a, b) {
@@ -82,10 +72,10 @@ greet();        // Hello, Guest!
 greet("Elle");  // Hello, Elle!
 ```
 
-Summary:
+Summary: 
 
-    Arguments are the values passed to a function.
+Arguments are the values passed to a function.
 
-    Parameters are the variables used to handle those values.
+Parameters are the variables used to handle those values.
 
-    JavaScript functions can accept any number of arguments — use them wisely.
+JavaScript functions can accept any number of arguments — use them wisely.

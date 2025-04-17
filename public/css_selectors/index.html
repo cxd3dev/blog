@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
-<head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script>
+<head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=63607&amp;path=livereload" data-no-instant defer></script>
     <link rel="icon" type="image/x-icon" href="../images/favicon.ico">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -96,47 +96,58 @@
         
 
         <div><p>CSS is a language that is used to design HTML documents. Its syntax is much simpler than that of HTML, since CSS lacks complex rules related to the nesting of elements. In fact, CSS is a rather &ldquo;flat&rdquo; language where nesting is hardly used. A typical CSS file consists of a sequence of CSS rules. Each CSS rule includes a selector and a list of properties with corresponding values. Here is an example of a simple CSS rule:</p>
-<p><code>selector { property: the value of the property; property: the value of the property; &quot; these are CSS rules property: the value of the property;     } /*== And this is a comment ==*/</code></p>
-<h3 id="selectors">Selectors</h3>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-js" data-lang="js"><span class="line"><span class="cl"><span class="nx">selector</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">  <span class="nx">property</span><span class="o">:</span> <span class="nx">the</span> <span class="nx">value</span> <span class="k">of</span> <span class="nx">the</span> <span class="nx">property</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">  <span class="nx">property</span><span class="o">:</span> <span class="nx">the</span> <span class="nx">value</span> <span class="k">of</span> <span class="nx">the</span> <span class="nx">property</span><span class="p">;</span> 
+</span></span><span class="line"><span class="cl">  <span class="c1">// these are CSS rules
+</span></span></span><span class="line"><span class="cl"><span class="c1"></span>  <span class="nx">property</span><span class="o">:</span> <span class="nx">the</span> <span class="nx">value</span> <span class="k">of</span> <span class="nx">the</span> <span class="nx">property</span><span class="p">;</span>    
+</span></span><span class="line"><span class="cl"><span class="p">}</span>
+</span></span><span class="line"><span class="cl"><span class="cm">/*== And this is a comment ==*/</span>
+</span></span></code></pre></div><h3 id="selectors">Selectors</h3>
 <p>The first part of the CSS rule is the selector. It specifies which HTML tag or tag group this set of properties will be applied to.</p>
 <p>There are many types of selectors, but the most common are:</p>
 <p>Tag selector: Applies styles to all elements of a certain type, for example, p, h1, div</p>
 <p>Class Selector: Applies styles to elements with a specific class, for example, .main__page</p>
 <p>Combined selectors: Also known as nested or contextual selectors, they allow you to apply styles to elements located inside other elements, such as div p</p>
-<p><code>p {...} /* Accessing the tag */ .main__title {...} /* Accessing the class */ p.nav__menu {...} /* Accessing the class inside the tag */ #nav__bar {...} /* Accessing the id */ h1#main__title {...} /* Accessing the tag with the id */ .header a {...} /* Accessing the tag, inside the tag with the class */ .header.nav__menu {...} /* Accessing the class, inside the class tag */</code></p>
-<h3 id="tag-name-selector">Tag Name Selector</h3>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-js" data-lang="js"><span class="line"><span class="cl"><span class="nx">p</span> <span class="p">{...}</span> 
+</span></span><span class="line"><span class="cl"><span class="cm">/* Accessing the tag */</span>
+</span></span><span class="line"><span class="cl"><span class="p">.</span><span class="nx">main__title</span> <span class="p">{...}</span> 
+</span></span><span class="line"><span class="cl"><span class="cm">/* Accessing the class */</span>
+</span></span><span class="line"><span class="cl"><span class="nx">p</span><span class="p">.</span><span class="nx">nav__menu</span> <span class="p">{...}</span> 
+</span></span><span class="line"><span class="cl"><span class="cm">/* Accessing the class inside the tag */</span>
+</span></span><span class="line"><span class="cl"><span class="err">#</span><span class="nx">nav__bar</span> <span class="p">{...}</span> 
+</span></span><span class="line"><span class="cl"><span class="cm">/* Accessing the id */</span>
+</span></span><span class="line"><span class="cl"><span class="nx">h1</span><span class="err">#</span><span class="nx">main__title</span> <span class="p">{...}</span> 
+</span></span><span class="line"><span class="cl"><span class="cm">/* Accessing the tag with the id */</span>
+</span></span><span class="line"><span class="cl"><span class="p">.</span><span class="nx">header</span> <span class="nx">a</span> <span class="p">{...}</span> 
+</span></span><span class="line"><span class="cl"><span class="cm">/* Accessing the tag, inside the tag with the class */</span>
+</span></span><span class="line"><span class="cl"><span class="p">.</span><span class="nx">header</span><span class="p">.</span><span class="nx">nav__menu</span> <span class="p">{...}</span> 
+</span></span><span class="line"><span class="cl"><span class="cm">/* Accessing the class, inside the class tag */</span>
+</span></span></code></pre></div><h3 id="tag-name-selector">Tag Name Selector</h3>
 <p>This type of selectors is the most basic. It is created by specifying the tag name without the angle brackets &lt; and &gt;. This selector selects all the elements with the corresponding tag name. For example, the selector &lsquo;p&rsquo; will select all elements named &lsquo;p&rsquo;, i.e. all paragraphs.</p>
 <p>For example</p>
-<p>``
-p { &quot; Accessing all p tags<br>
-color: #ff0000  <br>
-}</p>
-<pre tabindex="0"><code>
-### Class Selector
-
-This type of selector starts with a dot followed by the class name. It selects all the elements whose class attribute value matches the specified class name. 
- 
-</code></pre><p>.main {  &quot; Addressing the class
-color: #ff0000<br>
-}</p>
-<pre tabindex="0"><code>
-You can combine selectors by tag and by class as follows: `tag.class `. It is important to note that there should be no space between the tag and the class. This combined selector will select only those elements that match the specified tag and have the specified class.
- 
-``
-p.main__title { &#34; Accessing the p tag with the main__title class       
-  color: #ff00000 
-}
-</code></pre><h3 id="id-selector">ID Selector</h3>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-js" data-lang="js"><span class="line"><span class="cl"><span class="nx">p</span> <span class="p">{</span> <span class="c1">// Accessing all p tags   
+</span></span></span><span class="line"><span class="cl"><span class="c1"></span>  <span class="nx">color</span><span class="o">:</span> <span class="err">#</span><span class="nx">ff0000</span>     
+</span></span><span class="line"><span class="cl"><span class="p">}</span>
+</span></span></code></pre></div><h3 id="class-selector">Class Selector</h3>
+<p>This type of selector starts with a dot followed by the class name. It selects all the elements whose class attribute value matches the specified class name.</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-js" data-lang="js"><span class="line"><span class="cl"><span class="p">.</span><span class="nx">main</span> <span class="p">{</span>  <span class="c1">// Addressing the class 
+</span></span></span><span class="line"><span class="cl"><span class="c1"></span>  <span class="nx">color</span><span class="o">:</span> <span class="err">#</span><span class="nx">ff0000</span>  
+</span></span><span class="line"><span class="cl"><span class="p">}</span>
+</span></span></code></pre></div><p>You can combine selectors by tag and by class as follows: <code>tag.class </code>. It is important to note that there should be no space between the tag and the class. This combined selector will select only those elements that match the specified tag and have the specified class.</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-js" data-lang="js"><span class="line"><span class="cl"><span class="nx">p</span><span class="p">.</span><span class="nx">main__title</span> <span class="p">{</span> <span class="c1">// Accessing the p tag with the main__title class       
+</span></span></span><span class="line"><span class="cl"><span class="c1"></span>  <span class="nx">color</span><span class="o">:</span> <span class="err">#</span><span class="nx">ff00000</span> 
+</span></span><span class="line"><span class="cl"><span class="p">}</span>
+</span></span></code></pre></div><h3 id="id-selector">ID Selector</h3>
 <p>This type of selector functions similarly to a class selector, but it starts with the grid symbol # followed by the identifier name. It selects all the elements for which the value of the id attribute corresponds to the specified identifier name.</p>
-<pre tabindex="0"><code>#nav-list { ‹ Request by id      
-  color: #ff0000
-}
-</code></pre><p>The op id selector can also be combined with the selector for the tag</p>
-<p>``
-h1#main-title { &quot; Accessing the h1 tag with the main-title id <br>
-color: #ff0000
-}</p>
-<pre tabindex="0"><code></code></pre></div>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-js" data-lang="js"><span class="line"><span class="cl"><span class="err">#</span><span class="nx">nav</span><span class="o">-</span><span class="nx">list</span> <span class="p">{</span> <span class="c1">// Request by id      
+</span></span></span><span class="line"><span class="cl"><span class="c1"></span>  <span class="nx">color</span><span class="o">:</span> <span class="err">#</span><span class="nx">ff0000</span>
+</span></span><span class="line"><span class="cl"><span class="p">}</span>
+</span></span></code></pre></div><p>The op id selector can also be combined with the selector for the tag</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-js" data-lang="js"><span class="line"><span class="cl"><span class="nx">h1</span><span class="err">#</span><span class="nx">main</span><span class="o">-</span><span class="nx">title</span> <span class="p">{</span> <span class="c1">// Accessing the h1 tag with the main-title id    
+</span></span></span><span class="line"><span class="cl"><span class="c1"></span>  <span class="nx">color</span><span class="o">:</span> <span class="err">#</span><span class="nx">ff0000</span>
+</span></span><span class="line"><span class="cl"><span class="p">}</span>
+</span></span></code></pre></div></div>
     </div>
    </div>
 </div>

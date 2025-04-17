@@ -4,8 +4,6 @@ title = 'Cross Axis in Flexbox'
 categories = [ "css", "flexbox" ]
 +++
 
-Lecture from HTML Academy about the cross axis in CSS Flexbox.
-
 In Flexbox, instead of directions like "up" and "down", we use the concept of a **cross axis**.
 
 This axis is used for vertical alignment of elements.

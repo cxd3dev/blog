@@ -26,4 +26,4 @@ without parentheses at the end.
 
 #### Properties of numbers
 
-Numbers have static properties such as `MAX_VALUE`, `MIN_VALUE', `Non`, `POSITIVE_INFINITY`, `NEGATIVE_INFINITY`, `EPSILON`, `MAX_SAFE_INTEGER` and `MIN_SAFE_INTEGER' that provide information about numeric constants and constraints.
+Numbers have static properties such as `MAX_VALUE`, `MIN_VALUE`, `Non`, `POSITIVE_INFINITY`, `NEGATIVE_INFINITY`, `EPSILON`, `MAX_SAFE_INTEGER` and `MIN_SAFE_INTEGER` that provide information about numeric constants and constraints.

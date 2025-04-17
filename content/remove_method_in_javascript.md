@@ -12,11 +12,11 @@ element.remove();
 
 Deleting an item from a page by id
 
-``js
+```js
 let element = document.getElementById('box');
 element.remove();
 // Completely removing the element with the id "box"
-``
+```
 
 Deleting an element by class
 
@@ -32,11 +32,11 @@ document.querySelectorAll('.list-item').forEach(item => item.remove());
 
 Removing elements from a page after events, such as when a wedge is placed on something
 
-``js
+```js
 document.getElementById('deleteBtn').addEventListener('click', function() {
 this.remove();
 // The button will delete itself
 });
 ```
 
-The 'remove()` method helps with removing elements from the DOM. It gets rid of unnecessary code and makes working with dynamic interfaces more convenient.
+The remove() method helps with removing elements from the DOM. It gets rid of unnecessary code and makes working with dynamic interfaces more convenient.

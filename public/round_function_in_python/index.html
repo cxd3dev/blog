@@ -97,82 +97,51 @@
 
         <div><h3 id="number">Number</h3>
 <p>The <code>round()</code> function in Python is used to round numbers. It can round both integers and floating-point numbers.</p>
-<p>Syntax of the function <code>round()</code>
-<code>python round(number, ndigits) </code></p>
-<blockquote>
+<p>Syntax of the function <code>round()</code></p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-python" data-lang="python"><span class="line"><span class="cl"><span class="nb">round</span><span class="p">(</span><span class="n">number</span><span class="p">,</span> <span class="n">ndigits</span><span class="p">)</span>
+</span></span></code></pre></div><blockquote>
 <p><code>number</code> — the number to round up</p></blockquote>
 <blockquote>
 <p>`ndigits&rsquo; (optional) — the number of decimal places. If not specified, the number is rounded to the nearest integer.</p></blockquote>
 <p>Rounding to the nearest integer</p>
-<p>``python
-result = round(3.14159)
-print(result) # Output: 3</p>
-<pre tabindex="0"><code>
-Rounding with the number of decimal places
-
-``python
-result = round(3.14159, 2)
-print(result) # Output: 3.14
-``
-
-Rounding to the nearest larger integer
-
-``python
-result = round(3.7)
-print(result) # Output: 4
-</code></pre><p>Rounding up negative numbers</p>
-<p>``python
-result = round(-2.7)
-print(result) # Output: -3</p>
-<pre tabindex="0"><code>
-Rounding to the nearest even number
-if the number is exactly in the middle
-
-``python
-result = round(2.5)
-print(result) # Output: 2
-``
-
-If `ndigits&#39; is not specified, `round()` rounds to the nearest integer.
-
-If `ndigits` is specified, rounding occurs to the specified number of decimal places.
-
-If the number is exactly in the middle between two possible variants (for example, 2.5), Python rounds to the nearest even number (this is called &#34;bank rounding&#34;)
-
-### ndigits
-
-Examples with `ndigits&#39;, the second parameter of the `round()` function
-
-Rounding to one decimal place
-
-``python
-result = round(3.14159, 1)
-print(result) # Output: 3.1
-``
-
-Rounding to three decimal places
-
-``python
-result = round(3.14159, 3)
-print(result) # Output: 3.142
-``
-
-Rounding to zero decimal places is equivalent to rounding
-to an integer
-
-``python
-result = round(3.14159, 0)
-print(result) # Output: 3.0
-``
-
-The `round()` function is often used for:
-
-&gt;Simplifying numbers for output.
-
-&gt;Limits on the number of decimal places in calculations.
-
-&gt;Data preparation for further processing.
-</code></pre></div>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-python" data-lang="python"><span class="line"><span class="cl"><span class="n">result</span> <span class="o">=</span> <span class="nb">round</span><span class="p">(</span><span class="mf">3.14159</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl"><span class="nb">print</span><span class="p">(</span><span class="n">result</span><span class="p">)</span> <span class="c1"># Output: 3</span>
+</span></span></code></pre></div><p>Rounding with the number of decimal places</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-python" data-lang="python"><span class="line"><span class="cl"><span class="n">result</span> <span class="o">=</span> <span class="nb">round</span><span class="p">(</span><span class="mf">3.14159</span><span class="p">,</span> <span class="mi">2</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl"><span class="nb">print</span><span class="p">(</span><span class="n">result</span><span class="p">)</span> <span class="c1"># Output: 3.14</span>
+</span></span></code></pre></div><p>Rounding to the nearest larger integer</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-python" data-lang="python"><span class="line"><span class="cl"><span class="n">result</span> <span class="o">=</span> <span class="nb">round</span><span class="p">(</span><span class="mf">3.7</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl"><span class="nb">print</span><span class="p">(</span><span class="n">result</span><span class="p">)</span> <span class="c1"># Output: 4</span>
+</span></span></code></pre></div><p>Rounding up negative numbers</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-python" data-lang="python"><span class="line"><span class="cl"><span class="n">result</span> <span class="o">=</span> <span class="nb">round</span><span class="p">(</span><span class="o">-</span><span class="mf">2.7</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl"><span class="nb">print</span><span class="p">(</span><span class="n">result</span><span class="p">)</span> <span class="c1"># Output: -3</span>
+</span></span></code></pre></div><p>Rounding to the nearest even number
+if the number is exactly in the middle</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-python" data-lang="python"><span class="line"><span class="cl"><span class="n">result</span> <span class="o">=</span> <span class="nb">round</span><span class="p">(</span><span class="mf">2.5</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl"><span class="nb">print</span><span class="p">(</span><span class="n">result</span><span class="p">)</span> <span class="c1"># Output: 2</span>
+</span></span></code></pre></div><p>If <code>ndigits' is not specified, </code>round()` rounds to the nearest integer.</p>
+<p>If <code>ndigits</code> is specified, rounding occurs to the specified number of decimal places.</p>
+<p>If the number is exactly in the middle between two possible variants (for example, 2.5), Python rounds to the nearest even number (this is called &ldquo;bank rounding&rdquo;)</p>
+<h3 id="ndigits">ndigits</h3>
+<p>Examples with <code>ndigits', the second parameter of the </code>round()` function</p>
+<p>Rounding to one decimal place</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-python" data-lang="python"><span class="line"><span class="cl"><span class="n">result</span> <span class="o">=</span> <span class="nb">round</span><span class="p">(</span><span class="mf">3.14159</span><span class="p">,</span> <span class="mi">1</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl"><span class="nb">print</span><span class="p">(</span><span class="n">result</span><span class="p">)</span> <span class="c1"># Output: 3.1</span>
+</span></span></code></pre></div><p>Rounding to three decimal places</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-python" data-lang="python"><span class="line"><span class="cl"><span class="n">result</span> <span class="o">=</span> <span class="nb">round</span><span class="p">(</span><span class="mf">3.14159</span><span class="p">,</span> <span class="mi">3</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl"><span class="nb">print</span><span class="p">(</span><span class="n">result</span><span class="p">)</span> <span class="c1"># Output: 3.142</span>
+</span></span></code></pre></div><p>Rounding to zero decimal places is equivalent to rounding
+to an integer</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-python" data-lang="python"><span class="line"><span class="cl"><span class="n">result</span> <span class="o">=</span> <span class="nb">round</span><span class="p">(</span><span class="mf">3.14159</span><span class="p">,</span> <span class="mi">0</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl"><span class="nb">print</span><span class="p">(</span><span class="n">result</span><span class="p">)</span> <span class="c1"># Output: 3.0</span>
+</span></span></code></pre></div><p>The <code>round()</code> function is often used for:</p>
+<blockquote>
+<p>Simplifying numbers for output.</p></blockquote>
+<blockquote>
+<p>Limits on the number of decimal places in calculations.</p></blockquote>
+<blockquote>
+<p>Data preparation for further processing.</p></blockquote>
+</div>
     </div>
    </div>
 </div>

@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
-<head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script>
+<head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=63607&amp;path=livereload" data-no-instant defer></script>
     <link rel="icon" type="image/x-icon" href="../images/favicon.ico">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -95,7 +95,7 @@
             <time class="h5 gray title__date">14 February 2025</time>
         
 
-        <div><p>The <code>Object.setPrototypeOf()' method</code>in JavaScript, it allows you to dynamically set the prototype <code>[[Prototype]]</code> for the specified object. This is a way to change the prototype of an object after it is created.</p>
+        <div><p>The <code>Object.setPrototypeOf()</code> method in JavaScript, it allows you to dynamically set the prototype <code>[[Prototype]]</code> for the specified object. This is a way to change the prototype of an object after it is created.</p>
 <div class="highlight"><pre tabindex="0" class="chroma"><code class="language-js" data-lang="js"><span class="line"><span class="cl"><span class="nb">Object</span><span class="p">.</span><span class="nx">setPrototypeOf</span><span class="p">(</span><span class="nx">obj</span><span class="p">,</span> <span class="nx">prototype</span><span class="p">);</span>
 </span></span></code></pre></div><p>Here, <code>obj</code> is an object whose prototype needs to be installed or modified.</p>
 <p>And `prototype&rsquo; is a new prototype.</p>
@@ -118,16 +118,11 @@
 </span></span><span class="line"><span class="cl"><span class="c1">//We turn to the methods and use
 </span></span></span><span class="line"><span class="cl"><span class="c1"></span><span class="nx">girl</span><span class="p">.</span><span class="nx">intro</span><span class="p">();</span> <span class="c1">// Hi, my name is Elle
 </span></span></span><span class="line"><span class="cl"><span class="c1"></span><span class="nx">girl</span><span class="p">.</span><span class="nx">dance</span><span class="p">();</span> <span class="c1">// Elle dances&#34;
-</span></span></span><span class="line"><span class="cl"><span class="c1"></span><span class="sb">``</span>
-</span></span><span class="line"><span class="cl">
-</span></span><span class="line"><span class="cl"><span class="nx">Here</span><span class="p">,</span> <span class="nx">the</span> <span class="sb">`girl`</span> <span class="nx">object</span> <span class="nx">gets</span> <span class="nx">access</span> <span class="nx">to</span> <span class="nx">the</span> <span class="sb">`intro`</span> <span class="nx">and</span> <span class="sb">`dance`</span> <span class="nx">methods</span> <span class="nx">through</span> <span class="nx">the</span> <span class="err">&#39;</span><span class="nx">skillsOfGirls</span><span class="sb">` prototype
-</span></span></span><span class="line"><span class="cl"><span class="sb">
-</span></span></span><span class="line"><span class="cl"><span class="sb">Changing the prototype on the fly can lead to performance issues. 
-</span></span></span><span class="line"><span class="cl"><span class="sb">
-</span></span></span><span class="line"><span class="cl"><span class="sb">This method is useful for understanding how prototypes and inheritance work in JavaScript.
-</span></span></span><span class="line"><span class="cl"><span class="sb">
-</span></span></span><span class="line"><span class="cl"><span class="sb">In most cases, it is better to use `</span><span class="nb">Object</span><span class="p">.</span><span class="nx">create</span><span class="p">()</span><span class="sb">` or classes (ES6) to work with prototypes.
-</span></span></span></code></pre></div></div>
+</span></span></span></code></pre></div><p>Here, the <code>girl</code> object gets access to the <code>intro</code> and <code>dance</code> methods through the &lsquo;skillsOfGirls` prototype</p>
+<p>Changing the prototype on the fly can lead to performance issues.</p>
+<p>This method is useful for understanding how prototypes and inheritance work in JavaScript.</p>
+<p>In most cases, it is better to use <code>Object.create()</code> or classes (ES6) to work with prototypes.</p>
+</div>
     </div>
    </div>
 </div>
