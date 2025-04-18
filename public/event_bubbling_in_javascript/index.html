@@ -4,7 +4,7 @@
     <link rel="icon" type="image/x-icon" href="../images/favicon.ico">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Initial Git Setup</title>
+    <title>Event bubbling in JavaScript</title>
     <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/particles.js@2.0.0/particles.min.js"></script>
     <script>
@@ -88,61 +88,61 @@
    <div class="singleHead">
     <div class="sinleHeadTexts">
         
-            <h2 class="title__center">Initial Git Setup</h2>
+            <h2 class="title__center">Event bubbling in JavaScript</h2>
         
 
         
-            <time class="h5 gray title__date">03 October 2024</time>
+            <time class="h5 gray title__date">18 April 2025</time>
         
 
-        <div><h3 id="set-user-name">Set User Name</h3>
-<p>Specifies the user name that will be used for commits. Use Latin characters. If the name is one word, quotes are optional.</p>
-<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl">git config --global user.name <span class="s2">&#34;Cxd3&#34;</span>
-</span></span></code></pre></div><h3 id="set-email">Set Email</h3>
-<p>Specifies the user&rsquo;s email address. Use the same address registered with GitHub.</p>
-<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl">git config --global user.email <span class="s2">&#34;hi@cxd3.com&#34;</span>
-</span></span></code></pre></div><h3 id="view-configured-settings">View Configured Settings</h3>
-<p>You can check settings in the config file, but this method is faster.</p>
-<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl">git config --list
-</span></span></code></pre></div><h3 id="working-with-a-repository">Working with a Repository</h3>
-<h4 id="create-a-new-repository">Create a New Repository</h4>
-<p>Initialize git in a local folder:</p>
-<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl">git init
-</span></span></code></pre></div><h4 id="clone-a-repository-from-github">Clone a Repository from GitHub</h4>
-<p>The project will be cloned into the current directory.</p>
-<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl">git clone <span class="o">[</span>repository link<span class="o">]</span>
-</span></span></code></pre></div><h4 id="link-local-repo-with-github">Link Local Repo with GitHub</h4>
-<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl">git remote add origin <span class="o">[</span>repository link<span class="o">]</span>
-</span></span></code></pre></div><h3 id="working-with-changes">Working with Changes</h3>
-<h4 id="pull-changes">Pull Changes</h4>
-<p>This command fetches all updates from the GitHub project.</p>
-<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl">git pull
-</span></span></code></pre></div><h4 id="check-file-status">Check File Status</h4>
-<p>Shows which files were added, modified, or deleted — excluding committed ones.</p>
-<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl">git status
-</span></span></code></pre></div><p>Example output:</p>
-<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl">➜  cxd3 git:<span class="o">(</span>main<span class="o">)</span> ✗ git status
-</span></span><span class="line"><span class="cl">On branch main
-</span></span><span class="line"><span class="cl">Your branch is up to date with <span class="s1">&#39;origin/main&#39;</span>.
-</span></span></code></pre></div><h4 id="stage-files">Stage Files</h4>
-<p>This command stages all changes. To stage a single file, specify the filename instead of a dot.</p>
-<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl">git add .
-</span></span></code></pre></div><h4 id="commit-changes">Commit Changes</h4>
-<p>This command records the staged changes. No local save occurs until this is done.</p>
-<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl">git commit -m <span class="s2">&#34;Commit message&#34;</span>
-</span></span></code></pre></div><h4 id="view-commit-history">View Commit History</h4>
-<p>Shows the commit history. A common option is <code>--oneline</code>, which gives a brief view.</p>
-<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl">git log
-</span></span></code></pre></div><h4 id="push-changes">Push Changes</h4>
-<p>Sends all committed changes to GitHub.</p>
-<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl">git push
-</span></span></code></pre></div><h4 id="discard-unstaged-changes">Discard Unstaged Changes</h4>
-<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl">git restore <span class="o">[</span>file name<span class="o">]</span>
-</span></span></code></pre></div><h4 id="discard-staged-changes">Discard Staged Changes</h4>
-<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl">git reset --hard
-</span></span></code></pre></div><h4 id="delete-a-commit">Delete a Commit</h4>
-<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl">git revert <span class="o">[</span>commit hash<span class="o">]</span>
-</span></span></code></pre></div></div>
+        <div><p>In JavaScript, when an event happens on an element, it doesn&rsquo;t stop there. It rises - like a bubble - up through  the DOM tree, from the element itself to its ancestoes. This behavior is called <code>event bubbling</code></p>
+<p>Let&rsquo;s imagine we have a button inside a block:</p>
+<p>html:</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-html" data-lang="html"><span class="line"><span class="cl"><span class="p">&lt;</span><span class="nt">div</span> <span class="na">id</span><span class="o">=</span><span class="s">&#34;container&#34;</span><span class="p">&gt;</span>
+</span></span><span class="line"><span class="cl">    <span class="p">&lt;</span><span class="nt">button</span> <span class="na">id</span><span class="o">=</span><span class="s">&#34;mia&#34;</span><span class="p">&gt;</span>
+</span></span><span class="line"><span class="cl">        Click me!
+</span></span><span class="line"><span class="cl">    <span class="p">&lt;/</span><span class="nt">button</span><span class="p">&gt;</span>
+</span></span><span class="line"><span class="cl"><span class="p">&lt;/</span><span class="nt">div</span><span class="p">&gt;</span>
+</span></span></code></pre></div><p>JavaScript:</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-js" data-lang="js"><span class="line"><span class="cl"><span class="kr">const</span> <span class="nx">container</span> <span class="o">=</span> <span class="nb">document</span><span class="p">.</span><span class="nx">getElementById</span><span class="p">(</span><span class="s1">&#39;container&#39;</span><span class="p">);</span>
+</span></span><span class="line"><span class="cl"><span class="kr">const</span> <span class="nx">mia</span> <span class="o">=</span> <span class="nb">document</span><span class="p">.</span><span class="nx">getElementById</span><span class="p">(</span><span class="s1">&#39;mia&#39;</span><span class="p">);</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="nx">container</span><span class="p">.</span><span class="nx">addEventListener</span><span class="p">(</span><span class="s1">&#39;click&#39;</span><span class="p">,</span> <span class="p">=&gt;</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">    <span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="s1">&#39;Container clicked&#39;</span><span class="p">);</span>
+</span></span><span class="line"><span class="cl"><span class="p">});</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="nx">mia</span><span class="p">.</span><span class="nx">addEventListener</span><span class="p">(</span><span class="s1">&#39;click&#39;</span><span class="p">,</span> <span class="p">()</span> <span class="p">=&gt;</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">    <span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="s1">&#39;Mia clicked&#39;</span><span class="p">);</span>
+</span></span><span class="line"><span class="cl"><span class="p">});</span>
+</span></span></code></pre></div><p>What well be logged?</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-md" data-lang="md"><span class="line"><span class="cl">1 - Mia clicked
+</span></span><span class="line"><span class="cl">2 - Container clicked
+</span></span></code></pre></div><p>Because after the event is triggered on mia, it bubbles up and reaches container, which also has a click listener.</p>
+<h3 id="how-to-stop-bubbling">How to stop bubbling?</h3>
+<p>We can stop the event from bubbling by calling <code>.stopPropagation();</code></p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-js" data-lang="js"><span class="line"><span class="cl"><span class="nx">mia</span><span class="p">.</span><span class="nx">addEventListener</span><span class="p">(</span><span class="s1">&#39;click&#39;</span><span class="p">,</span> <span class="p">(</span><span class="nx">event</span><span class="p">)</span> <span class="p">=&gt;</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">    <span class="nx">event</span><span class="p">.</span><span class="nx">stopPropogation</span><span class="p">();</span>
+</span></span><span class="line"><span class="cl">    <span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="s1">&#39;Only Mia reacted&#39;</span><span class="p">);</span>
+</span></span><span class="line"><span class="cl"><span class="p">});</span>
+</span></span></code></pre></div><p>Now the click will only be handled on the button. It won&rsquo;t reach the parent container.</p>
+<h4 id="when-is-bubbling-useful">When is bubbling useful?</h4>
+<p>Event bubbling is not a bug - it&rsquo;s a feature. We can use to:</p>
+<ol>
+<li>
+<p>Attach a single event listener to a parent instead of every child.</p>
+</li>
+<li>
+<p>Build event delegation system (we&rsquo;ll cover that separately)</p>
+</li>
+<li>
+<p>Manage layered interactions across components</p>
+</li>
+</ol>
+<h2 id="notes">Notes</h2>
+<p>Events rise from the target element up through the DOM</p>
+<p>We can call stopPropagation() to stop them mid-way</p>
+<p>By default, addEventListener() listens in the bubbling phase, not the capturing one</p>
+</div>
     </div>
    </div>
 </div>
