@@ -23,6 +23,13 @@
       <description>&lt;p&gt;When an event happens on the page, it doesn&amp;rsquo;t always hit he target directly. In fact, the browser first &lt;code&gt;captures&lt;/code&gt; the event from the top - starting from document and going down through all parent elements - until it reaches the target. This is called the &lt;code&gt;capturing phase&lt;/code&gt; or event capturing&lt;/p&gt;&#xA;&lt;p&gt;By default, when we attach an event listener, it listens during the bubbling phase. But if we want to catch the event before it reaches the target, we can listen during the capturing phase&lt;/p&gt;</description>
     </item>
     <item>
+      <title>preventDefault() method in JavaScript</title>
+      <link>http://localhost:1313/preventdefault_method_in_js/</link>
+      <pubDate>Wed, 16 Apr 2025 11:53:24 +0300</pubDate>
+      <guid>http://localhost:1313/preventdefault_method_in_js/</guid>
+      <description>&lt;p&gt;When we click a link, the browser follows it. When we submit a form, the page reloads.&lt;/p&gt;&#xA;&lt;p&gt;But sometimes we want to stop that and handle things ourselves. That&amp;rsquo;s where &lt;code&gt;preventDefault()&lt;/code&gt; comes in.&lt;/p&gt;&#xA;&lt;p&gt;We can use &lt;code&gt;event.preventDefault()&lt;/code&gt; to stop the browser from foing its default action.&lt;/p&gt;&#xA;&lt;p&gt;That means:&lt;/p&gt;&#xA;&lt;ol&gt;&#xA;&lt;li&gt;&#xA;&lt;p&gt;No page reload on form submit.&lt;/p&gt;&#xA;&lt;/li&gt;&#xA;&lt;li&gt;&#xA;&lt;p&gt;No junp when clicking a link.&lt;/p&gt;&#xA;&lt;/li&gt;&#xA;&lt;li&gt;&#xA;&lt;p&gt;No drag or drop unless we allow it.&lt;/p&gt;&#xA;&lt;/li&gt;&#xA;&lt;li&gt;&#xA;&lt;p&gt;And more control over how things behave.&lt;/p&gt;</description>
+    </item>
+    <item>
       <title>Event properties in JavaScript</title>
       <link>http://localhost:1313/events_properties_in_javascript/</link>
       <pubDate>Mon, 31 Mar 2025 10:00:24 +0300</pubDate>
