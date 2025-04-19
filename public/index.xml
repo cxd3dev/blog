@@ -30,6 +30,13 @@
       <description>&lt;p&gt;When we click a link, the browser follows it. When we submit a form, the page reloads.&lt;/p&gt;&#xA;&lt;p&gt;But sometimes we want to stop that and handle things ourselves. That&amp;rsquo;s where &lt;code&gt;preventDefault()&lt;/code&gt; comes in.&lt;/p&gt;&#xA;&lt;p&gt;We can use &lt;code&gt;event.preventDefault()&lt;/code&gt; to stop the browser from foing its default action.&lt;/p&gt;&#xA;&lt;p&gt;That means:&lt;/p&gt;&#xA;&lt;ol&gt;&#xA;&lt;li&gt;&#xA;&lt;p&gt;No page reload on form submit.&lt;/p&gt;&#xA;&lt;/li&gt;&#xA;&lt;li&gt;&#xA;&lt;p&gt;No junp when clicking a link.&lt;/p&gt;&#xA;&lt;/li&gt;&#xA;&lt;li&gt;&#xA;&lt;p&gt;No drag or drop unless we allow it.&lt;/p&gt;&#xA;&lt;/li&gt;&#xA;&lt;li&gt;&#xA;&lt;p&gt;And more control over how things behave.&lt;/p&gt;</description>
     </item>
     <item>
+      <title>stopPropagation() method in JavaScript</title>
+      <link>http://localhost:1313/stoppropagation_in_js/</link>
+      <pubDate>Tue, 15 Apr 2025 12:00:24 +0300</pubDate>
+      <guid>http://localhost:1313/stoppropagation_in_js/</guid>
+      <description>&lt;p&gt;Sometimes we want an event to happen only on the element it was triggered on, and nowhere else.&lt;/p&gt;&#xA;&lt;p&gt;We don&amp;rsquo;t want it to bubble up to parent elements. That&amp;rsquo;s when we can use &lt;code&gt;stopPropagation()&lt;/code&gt; - it tells the browser&#xA;&lt;br /&gt;&lt;/p&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;&amp;ldquo;Stop right here. Don&amp;rsquo;t go any further.&amp;rdquo;&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;h3 id=&#34;what-does-stoppropagation-do&#34;&gt;What does stopPropagation do?&lt;/h3&gt;&#xA;&lt;p&gt;In JavaScript most events bubble up through the DOM tree.&lt;/p&gt;&#xA;&lt;p&gt;When we use &lt;code&gt;event.stopPropagation()&lt;/code&gt; we tell the event:&#xA;&lt;br /&gt;&lt;/p&gt;</description>
+    </item>
+    <item>
       <title>Event properties in JavaScript</title>
       <link>http://localhost:1313/events_properties_in_javascript/</link>
       <pubDate>Mon, 31 Mar 2025 10:00:24 +0300</pubDate>
