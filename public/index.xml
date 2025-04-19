@@ -37,6 +37,13 @@
       <description>&lt;p&gt;Sometimes we want an event to happen only on the element it was triggered on, and nowhere else.&lt;/p&gt;&#xA;&lt;p&gt;We don&amp;rsquo;t want it to bubble up to parent elements. That&amp;rsquo;s when we can use &lt;code&gt;stopPropagation()&lt;/code&gt; - it tells the browser&#xA;&lt;br /&gt;&lt;/p&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;&amp;ldquo;Stop right here. Don&amp;rsquo;t go any further.&amp;rdquo;&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;h3 id=&#34;what-does-stoppropagation-do&#34;&gt;What does stopPropagation do?&lt;/h3&gt;&#xA;&lt;p&gt;In JavaScript most events bubble up through the DOM tree.&lt;/p&gt;&#xA;&lt;p&gt;When we use &lt;code&gt;event.stopPropagation()&lt;/code&gt; we tell the event:&#xA;&lt;br /&gt;&lt;/p&gt;</description>
     </item>
     <item>
+      <title>Event Delegation in JavaScript</title>
+      <link>http://localhost:1313/event_delegation_in_js/</link>
+      <pubDate>Mon, 14 Apr 2025 11:53:24 +0300</pubDate>
+      <guid>http://localhost:1313/event_delegation_in_js/</guid>
+      <description>&lt;p&gt;Sometimes we don&amp;rsquo;t want to attach event listeners to every single elements.&lt;/p&gt;&#xA;&lt;p&gt;Instead, we can attach just one listener to a parent - and use it to handle all events from its children.&lt;/p&gt;&#xA;&lt;p&gt;This techniwue is called &lt;code&gt;event delegation&lt;/code&gt;&lt;/p&gt;&#xA;&lt;h3 id=&#34;why-use-delegation&#34;&gt;Why use delegation?&lt;/h3&gt;&#xA;&lt;p&gt;We can use event delegation when:&lt;/p&gt;&#xA;&lt;ol&gt;&#xA;&lt;li&gt;&#xA;&lt;p&gt;We have lots of similar elements (like list items or buttons)&lt;/p&gt;&#xA;&lt;/li&gt;&#xA;&lt;li&gt;&#xA;&lt;p&gt;We want to reduce the number of listeners in memory&lt;/p&gt;&#xA;&lt;/li&gt;&#xA;&lt;li&gt;&#xA;&lt;p&gt;We added elements to the page dynamically&lt;/p&gt;</description>
+    </item>
+    <item>
       <title>Event properties in JavaScript</title>
       <link>http://localhost:1313/events_properties_in_javascript/</link>
       <pubDate>Mon, 31 Mar 2025 10:00:24 +0300</pubDate>
