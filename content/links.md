@@ -35,6 +35,9 @@ Knowledge base built from Universities and non-coding courses I’ve completed a
 <p>
 <a href="/economy/">Economy</a> &rsaquo; Economics
 </p>
+<p>
+<a href="/the_hollow_crown/">The Hollow Crown</a> &rsaquo; The Hollow Crown by William Shakespeare
+</p>
 <hr style="width: 100px;">
 <p>
 Useful links

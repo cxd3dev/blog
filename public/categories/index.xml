@@ -6,12 +6,19 @@
     <description>Recent content in Categories on Cxd3</description>
     <generator>Hugo</generator>
     <language>en</language>
-    <lastBuildDate>Mon, 31 Mar 2025 10:00:24 +0300</lastBuildDate>
+    <lastBuildDate>Fri, 18 Apr 2025 14:43:24 +0300</lastBuildDate>
     <atom:link href="http://localhost:1313/categories/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>The_hollow_crown</title>
+      <link>http://localhost:1313/the_hollow_crown/</link>
+      <pubDate>Fri, 18 Apr 2025 14:43:24 +0300</pubDate>
+      <guid>http://localhost:1313/the_hollow_crown/</guid>
+      <description></description>
+    </item>
     <item>
       <title>Javascript</title>
       <link>http://localhost:1313/javascript/</link>
-      <pubDate>Mon, 31 Mar 2025 10:00:24 +0300</pubDate>
+      <pubDate>Fri, 18 Apr 2025 12:00:24 +0300</pubDate>
       <guid>http://localhost:1313/javascript/</guid>
       <description></description>
     </item>
