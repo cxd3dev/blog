@@ -39,9 +39,9 @@ console.log(list.length); // now 4!
 
 ## Examples of Live Collections
 
-- `document.getElementsByTagName('div')`
-- `document.getElementsByClassName('button')`
-- `element.children`
+ `getElementsByTagName('div')`
+ `getElementsByClassName('button')`
+ `element.children`
 
 
 ## Be Careful

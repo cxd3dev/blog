@@ -14,18 +14,9 @@ Every property in an object has hidden settings:
 These settings are called **property descriptors**.
 
 
-## Main Property Flags:
-
-| Flag         | What it means                     | Default value |
-|--------------|------------------------------------|---------------|
-| `writable`   | Can the value be changed?           | `true`        |
-| `enumerable` | Will it show in loops (`for...in`, `Object.keys`)? | `true` |
-| `configurable` | Can the property be deleted or reconfigured? | `true` |
-
-
 ## Getting a Property Descriptor
 
-Use `Object.getOwnPropertyDescriptor(obj, prop)`.
+Use: getOwnPropertyDescriptor(obj, prop).
 
 **Example with Mia:**
 
@@ -39,11 +30,10 @@ let descriptor = Object.getOwnPropertyDescriptor(mia, 'age');
 console.log(descriptor);
 ```
 
----
 
 ## Defining a Property Descriptor
 
-Use `Object.defineProperty(obj, prop, descriptor)`.
+Use: defineProperty(obj, prop, descriptor).
 
 **Example with Eva:**
 
@@ -63,7 +53,7 @@ console.log(eva.isCoder); // still true!
 ```
 
 
-## Defining Multiple Properties: `Object.defineProperties`
+## Defining Multiple Properties: defineProperties()
 
 **Example with Elle:**
 

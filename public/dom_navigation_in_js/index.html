@@ -97,49 +97,49 @@
 
         <div><p>When we work with the DOM, sometimes we don&rsquo;t just need to find one element — we need to <strong>walk</strong> through the tree: find parents, children, and siblings.<br>
 Today, we&rsquo;ll learn how to do it easily and beautifully!</p>
-<h2 id="documentbody-and-documenthead">document.body and document.head</h2>
+<h4 id="documentbody-and-documenthead">document.body and document.head</h4>
 <p><code>document.body</code> gives access to everything visible on the page.<br>
 <code>document.head</code> gives access to the invisible but important parts like styles and scripts.</p>
 <div class="highlight"><pre tabindex="0" class="chroma"><code class="language-javascript" data-lang="javascript"><span class="line"><span class="cl"><span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nb">document</span><span class="p">.</span><span class="nx">body</span><span class="p">);</span>  <span class="c1">// Visible content
 </span></span></span><span class="line"><span class="cl"><span class="c1"></span><span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nb">document</span><span class="p">.</span><span class="nx">head</span><span class="p">);</span>  <span class="c1">// Head section
-</span></span></span></code></pre></div><h2 id="documentdocumentelement">document.documentElement</h2>
+</span></span></span></code></pre></div><h4 id="documentelement">documentElement</h4>
 <p><code>document.documentElement</code> is the whole page — the entire <code>&lt;html&gt;</code> tag.</p>
 <div class="highlight"><pre tabindex="0" class="chroma"><code class="language-javascript" data-lang="javascript"><span class="line"><span class="cl"><span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nb">document</span><span class="p">.</span><span class="nx">documentElement</span><span class="p">);</span> <span class="c1">// &lt;html&gt;...&lt;/html&gt;
-</span></span></span></code></pre></div><h2 id="child-nodes-childnodes">Child Nodes: childNodes</h2>
+</span></span></span></code></pre></div><h4 id="child-nodes-childnodes">Child Nodes: childNodes</h4>
 <p><code>childNodes</code> contains everything inside an element: tags, text nodes, comments.</p>
 <div class="highlight"><pre tabindex="0" class="chroma"><code class="language-javascript" data-lang="javascript"><span class="line"><span class="cl"><span class="kr">const</span> <span class="nx">nodes</span> <span class="o">=</span> <span class="nb">document</span><span class="p">.</span><span class="nx">body</span><span class="p">.</span><span class="nx">childNodes</span><span class="p">;</span>
 </span></span><span class="line"><span class="cl"><span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nx">nodes</span><span class="p">);</span>
-</span></span></code></pre></div><h2 id="first-and-last-child-firstchild-and-lastchild">First and Last Child: firstChild and lastChild</h2>
+</span></span></code></pre></div><h4 id="first-and-last-child-firstchild-and-lastchild">First and Last Child: firstChild and lastChild</h4>
 <p><code>firstChild</code> and <code>lastChild</code> get the first and last node — not necessarily an element!</p>
 <div class="highlight"><pre tabindex="0" class="chroma"><code class="language-javascript" data-lang="javascript"><span class="line"><span class="cl"><span class="kr">const</span> <span class="nx">first</span> <span class="o">=</span> <span class="nb">document</span><span class="p">.</span><span class="nx">body</span><span class="p">.</span><span class="nx">firstChild</span><span class="p">;</span>
 </span></span><span class="line"><span class="cl"><span class="kr">const</span> <span class="nx">last</span> <span class="o">=</span> <span class="nb">document</span><span class="p">.</span><span class="nx">body</span><span class="p">.</span><span class="nx">lastChild</span><span class="p">;</span>
 </span></span><span class="line"><span class="cl"><span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nx">first</span><span class="p">,</span> <span class="nx">last</span><span class="p">);</span>
-</span></span></code></pre></div><h2 id="real-elements-only-firstelementchild-and-lastelementchild">Real Elements Only: firstElementChild and lastElementChild</h2>
+</span></span></code></pre></div><p>Real Elements Only: firstElementChild and lastElementChild</p>
 <p><code>firstElementChild</code> and <code>lastElementChild</code> ignore text and focus only on real elements!</p>
 <div class="highlight"><pre tabindex="0" class="chroma"><code class="language-javascript" data-lang="javascript"><span class="line"><span class="cl"><span class="kr">const</span> <span class="nx">firstElement</span> <span class="o">=</span> <span class="nb">document</span><span class="p">.</span><span class="nx">body</span><span class="p">.</span><span class="nx">firstElementChild</span><span class="p">;</span>
 </span></span><span class="line"><span class="cl"><span class="kr">const</span> <span class="nx">lastElement</span> <span class="o">=</span> <span class="nb">document</span><span class="p">.</span><span class="nx">body</span><span class="p">.</span><span class="nx">lastElementChild</span><span class="p">;</span>
 </span></span><span class="line"><span class="cl"><span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nx">firstElement</span><span class="p">,</span> <span class="nx">lastElement</span><span class="p">);</span>
-</span></span></code></pre></div><h2 id="parent-element-parentnode">Parent Element: parentNode</h2>
+</span></span></code></pre></div><h4 id="parent-element-parentnode">Parent Element: parentNode</h4>
 <p><code>parentNode</code> gives you the parent of an element — the one holding it in the DOM.</p>
 <div class="highlight"><pre tabindex="0" class="chroma"><code class="language-javascript" data-lang="javascript"><span class="line"><span class="cl"><span class="kr">const</span> <span class="nx">miaButton</span> <span class="o">=</span> <span class="nb">document</span><span class="p">.</span><span class="nx">querySelector</span><span class="p">(</span><span class="s1">&#39;button&#39;</span><span class="p">);</span>
 </span></span><span class="line"><span class="cl"><span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nx">miaButton</span><span class="p">.</span><span class="nx">parentNode</span><span class="p">);</span>
-</span></span></code></pre></div><h2 id="siblings-nextsibling-previoussibling">Siblings: nextSibling, previousSibling</h2>
+</span></span></code></pre></div><h4 id="siblings-nextsibling-previoussibling">Siblings: nextSibling, previousSibling</h4>
 <p><code>nextSibling</code> and <code>previousSibling</code> can return any node — even whitespace or text.</p>
 <div class="highlight"><pre tabindex="0" class="chroma"><code class="language-javascript" data-lang="javascript"><span class="line"><span class="cl"><span class="kr">const</span> <span class="nx">node</span> <span class="o">=</span> <span class="nb">document</span><span class="p">.</span><span class="nx">querySelector</span><span class="p">(</span><span class="s1">&#39;h1&#39;</span><span class="p">);</span>
 </span></span><span class="line"><span class="cl"><span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nx">node</span><span class="p">.</span><span class="nx">nextSibling</span><span class="p">);</span>
 </span></span><span class="line"><span class="cl"><span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nx">node</span><span class="p">.</span><span class="nx">previousSibling</span><span class="p">);</span>
-</span></span></code></pre></div><h2 id="real-siblings-nextelementsibling-previouselementsibling">Real Siblings: nextElementSibling, previousElementSibling</h2>
+</span></span></code></pre></div><p>Real Siblings: nextElementSibling, previousElementSibling</p>
 <p><code>nextElementSibling</code> and <code>previousElementSibling</code> skip text nodes and find only real HTML neighbors!</p>
 <div class="highlight"><pre tabindex="0" class="chroma"><code class="language-javascript" data-lang="javascript"><span class="line"><span class="cl"><span class="kr">const</span> <span class="nx">realNode</span> <span class="o">=</span> <span class="nb">document</span><span class="p">.</span><span class="nx">querySelector</span><span class="p">(</span><span class="s1">&#39;h1&#39;</span><span class="p">);</span>
 </span></span><span class="line"><span class="cl"><span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nx">realNode</span><span class="p">.</span><span class="nx">nextElementSibling</span><span class="p">);</span>
 </span></span><span class="line"><span class="cl"><span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nx">realNode</span><span class="p">.</span><span class="nx">previousElementSibling</span><span class="p">);</span>
-</span></span></code></pre></div><h2 id="working-with-data-attributes">Working with data-attributes</h2>
+</span></span></code></pre></div><h4 id="working-with-data-attributes">Working with data-attributes</h4>
 <p><code>data-attributes</code> let you store extra information inside HTML elements, easily accessed via <code>.dataset</code>.</p>
 <div class="highlight"><pre tabindex="0" class="chroma"><code class="language-html" data-lang="html"><span class="line"><span class="cl"><span class="p">&lt;</span><span class="nt">button</span> <span class="na">data-current</span><span class="o">=</span><span class="s">&#34;5&#34;</span> <span class="na">data-user</span><span class="o">=</span><span class="s">&#34;eva&#34;</span><span class="p">&gt;</span>Click me<span class="p">&lt;/</span><span class="nt">button</span><span class="p">&gt;</span>
 </span></span></code></pre></div><div class="highlight"><pre tabindex="0" class="chroma"><code class="language-javascript" data-lang="javascript"><span class="line"><span class="cl"><span class="kr">const</span> <span class="nx">btn</span> <span class="o">=</span> <span class="nb">document</span><span class="p">.</span><span class="nx">querySelector</span><span class="p">(</span><span class="s1">&#39;button&#39;</span><span class="p">);</span>
 </span></span><span class="line"><span class="cl"><span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nx">btn</span><span class="p">.</span><span class="nx">dataset</span><span class="p">.</span><span class="nx">current</span><span class="p">);</span> <span class="c1">// &#39;5&#39;
 </span></span></span><span class="line"><span class="cl"><span class="c1"></span><span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nx">btn</span><span class="p">.</span><span class="nx">dataset</span><span class="p">.</span><span class="nx">user</span><span class="p">);</span>    <span class="c1">// &#39;eva&#39;
-</span></span></span></code></pre></div><h2 id="summary">Summary</h2>
+</span></span></span></code></pre></div><h4 id="notes">Notes</h4>
 <p>Today, we learned to:</p>
 <ul>
 <li>Navigate up, down, and sideways through the DOM!</li>

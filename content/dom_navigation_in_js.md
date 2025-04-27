@@ -8,7 +8,7 @@ When we work with the DOM, sometimes we don't just need to find one element — 
 Today, we'll learn how to do it easily and beautifully!
 
 
-## document.body and document.head
+#### document.body and document.head
 
 `document.body` gives access to everything visible on the page.  
 `document.head` gives access to the invisible but important parts like styles and scripts.
@@ -19,7 +19,7 @@ console.log(document.head);  // Head section
 ```
 
 
-## document.documentElement
+#### documentElement
 
 `document.documentElement` is the whole page — the entire `<html>` tag.
 
@@ -28,7 +28,7 @@ console.log(document.documentElement); // <html>...</html>
 ```
 
 
-## Child Nodes: childNodes
+#### Child Nodes: childNodes
 
 `childNodes` contains everything inside an element: tags, text nodes, comments.
 
@@ -38,7 +38,7 @@ console.log(nodes);
 ```
 
 
-## First and Last Child: firstChild and lastChild
+#### First and Last Child: firstChild and lastChild
 
 `firstChild` and `lastChild` get the first and last node — not necessarily an element!
 
@@ -49,7 +49,7 @@ console.log(first, last);
 ```
 
 
-## Real Elements Only: firstElementChild and lastElementChild
+Real Elements Only: firstElementChild and lastElementChild
 
 `firstElementChild` and `lastElementChild` ignore text and focus only on real elements!
 
@@ -60,7 +60,7 @@ console.log(firstElement, lastElement);
 ```
 
 
-## Parent Element: parentNode
+#### Parent Element: parentNode
 
 `parentNode` gives you the parent of an element — the one holding it in the DOM.
 
@@ -70,7 +70,7 @@ console.log(miaButton.parentNode);
 ```
 
 
-## Siblings: nextSibling, previousSibling
+#### Siblings: nextSibling, previousSibling
 
 `nextSibling` and `previousSibling` can return any node — even whitespace or text.
 
@@ -81,7 +81,7 @@ console.log(node.previousSibling);
 ```
 
 
-## Real Siblings: nextElementSibling, previousElementSibling
+Real Siblings: nextElementSibling, previousElementSibling
 
 `nextElementSibling` and `previousElementSibling` skip text nodes and find only real HTML neighbors!
 
@@ -92,7 +92,7 @@ console.log(realNode.previousElementSibling);
 ```
 
 
-## Working with data-attributes
+#### Working with data-attributes
 
 `data-attributes` let you store extra information inside HTML elements, easily accessed via `.dataset`.
 
@@ -106,7 +106,7 @@ console.log(btn.dataset.current); // '5'
 console.log(btn.dataset.user);    // 'eva'
 ```
 
-## Summary
+#### Notes
 
 Today, we learned to:
 - Navigate up, down, and sideways through the DOM!
