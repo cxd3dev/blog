@@ -5,8 +5,6 @@ categories = [ "the_hollow_crown" ]
 slug = 'the_hollow_сrown_ep1'
 +++
 
-![First scene](/images/first_scene.png)
-
 Let us talk of gravestones, of burial vaults, of worms.  
 Let us write all our sorrows on the earth and sit here,  
 telling sad stories of the death of kings.  

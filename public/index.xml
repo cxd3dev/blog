@@ -6,14 +6,21 @@
     <description>Recent content on Cxd3</description>
     <generator>Hugo</generator>
     <language>en</language>
-    <lastBuildDate>Fri, 18 Apr 2025 14:43:24 +0300</lastBuildDate>
+    <lastBuildDate>Sun, 20 Apr 2025 18:53:24 +0300</lastBuildDate>
     <atom:link href="http://localhost:1313/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Navigating the DOM in JavaScript</title>
+      <link>http://localhost:1313/dom_navigation_in_js/</link>
+      <pubDate>Sun, 20 Apr 2025 18:53:24 +0300</pubDate>
+      <guid>http://localhost:1313/dom_navigation_in_js/</guid>
+      <description>&lt;p&gt;When we work with the DOM, sometimes we don&amp;rsquo;t just need to find one element — we need to &lt;strong&gt;walk&lt;/strong&gt; through the tree: find parents, children, and siblings.&lt;br&gt;&#xA;Today, we&amp;rsquo;ll learn how to do it easily and beautifully!&lt;/p&gt;&#xA;&lt;h2 id=&#34;documentbody-and-documenthead&#34;&gt;document.body and document.head&lt;/h2&gt;&#xA;&lt;p&gt;&lt;code&gt;document.body&lt;/code&gt; gives access to everything visible on the page.&lt;br&gt;&#xA;&lt;code&gt;document.head&lt;/code&gt; gives access to the invisible but important parts like styles and scripts.&lt;/p&gt;&#xA;&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-javascript&#34; data-lang=&#34;javascript&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;nx&#34;&gt;console&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;.&lt;/span&gt;&lt;span class=&#34;nx&#34;&gt;log&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;nb&#34;&gt;document&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;.&lt;/span&gt;&lt;span class=&#34;nx&#34;&gt;body&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;);&lt;/span&gt;  &lt;span class=&#34;c1&#34;&gt;// Visible content&#xA;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;c1&#34;&gt;&lt;/span&gt;&lt;span class=&#34;nx&#34;&gt;console&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;.&lt;/span&gt;&lt;span class=&#34;nx&#34;&gt;log&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;nb&#34;&gt;document&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;.&lt;/span&gt;&lt;span class=&#34;nx&#34;&gt;head&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;);&lt;/span&gt;  &lt;span class=&#34;c1&#34;&gt;// Head section&#xA;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;h2 id=&#34;documentdocumentelement&#34;&gt;document.documentElement&lt;/h2&gt;&#xA;&lt;p&gt;&lt;code&gt;document.documentElement&lt;/code&gt; is the whole page — the entire &lt;code&gt;&amp;lt;html&amp;gt;&lt;/code&gt; tag.&lt;/p&gt;</description>
+    </item>
     <item>
       <title>The Hollow Crown – Episode I: Tombs and Kings</title>
       <link>http://localhost:1313/the_hollow_%D1%81rown_ep1/</link>
       <pubDate>Fri, 18 Apr 2025 14:43:24 +0300</pubDate>
       <guid>http://localhost:1313/the_hollow_%D1%81rown_ep1/</guid>
-      <description>&lt;p&gt;&lt;img src=&#34;http://localhost:1313/images/first_scene.png&#34; alt=&#34;First scene&#34;&gt;&lt;/p&gt;&#xA;&lt;p&gt;Let us talk of gravestones, of burial vaults, of worms.&lt;br&gt;&#xA;Let us write all our sorrows on the earth and sit here,&lt;br&gt;&#xA;telling sad stories of the death of kings.&lt;br&gt;&#xA;Some deposed, some slain in battle,&lt;br&gt;&#xA;some haunted by the ghosts of their victims,&lt;br&gt;&#xA;some poisoned by their wives,&lt;br&gt;&#xA;some killed in their sleep.&lt;br&gt;&#xA;All of them — dead.&lt;/p&gt;&#xA;&lt;p&gt;Old John of Gaunt, time-honored Lancaster,&lt;br&gt;&#xA;with your brave son Henry of Hereford beside you —&lt;br&gt;&#xA;who brings forth accusations against Thomas Mowbray, Duke of Norfolk.&lt;br&gt;&#xA;We had no leisure to hear them till now.&lt;/p&gt;</description>
+      <description>&lt;p&gt;Let us talk of gravestones, of burial vaults, of worms.&lt;br&gt;&#xA;Let us write all our sorrows on the earth and sit here,&lt;br&gt;&#xA;telling sad stories of the death of kings.&lt;br&gt;&#xA;Some deposed, some slain in battle,&lt;br&gt;&#xA;some haunted by the ghosts of their victims,&lt;br&gt;&#xA;some poisoned by their wives,&lt;br&gt;&#xA;some killed in their sleep.&lt;br&gt;&#xA;All of them — dead.&lt;/p&gt;&#xA;&lt;p&gt;Old John of Gaunt, time-honored Lancaster,&lt;br&gt;&#xA;with your brave son Henry of Hereford beside you —&lt;br&gt;&#xA;who brings forth accusations against Thomas Mowbray, Duke of Norfolk.&lt;br&gt;&#xA;We had no leisure to hear them till now.&lt;/p&gt;</description>
     </item>
     <item>
       <title>Event bubbling in JavaScript</title>

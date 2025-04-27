@@ -2,10 +2,16 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
-    <loc>http://localhost:1313/categories/</loc>
-    <lastmod>2025-04-18T14:43:24+03:00</lastmod>
-  </url><url>
     <loc>http://localhost:1313/</loc>
+    <lastmod>2025-04-20T18:53:24+03:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/javascript/</loc>
+    <lastmod>2025-04-20T18:53:24+03:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/dom_navigation_in_js/</loc>
+    <lastmod>2025-04-20T18:53:24+03:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/categories/</loc>
     <lastmod>2025-04-18T14:43:24+03:00</lastmod>
   </url><url>
     <loc>http://localhost:1313/the_hollow_%D1%81rown_ep1/</loc>
@@ -15,9 +21,6 @@
     <lastmod>2025-04-18T14:43:24+03:00</lastmod>
   </url><url>
     <loc>http://localhost:1313/event_bubbling_in_javascript/</loc>
-    <lastmod>2025-04-18T12:00:24+03:00</lastmod>
-  </url><url>
-    <loc>http://localhost:1313/javascript/</loc>
     <lastmod>2025-04-18T12:00:24+03:00</lastmod>
   </url><url>
     <loc>http://localhost:1313/event_capturing_in_js/</loc>
