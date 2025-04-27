@@ -6,8 +6,15 @@
     <description>Recent content on Cxd3</description>
     <generator>Hugo</generator>
     <language>en</language>
-    <lastBuildDate>Fri, 25 Apr 2025 17:30:00 +0300</lastBuildDate>
+    <lastBuildDate>Sat, 26 Apr 2025 18:53:24 +0300</lastBuildDate>
     <atom:link href="http://localhost:1313/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Property Descriptors and Useful Methods in JavaScript</title>
+      <link>http://localhost:1313/desriptors_in_javascript/</link>
+      <pubDate>Sat, 26 Apr 2025 18:53:24 +0300</pubDate>
+      <guid>http://localhost:1313/desriptors_in_javascript/</guid>
+      <description>&lt;h2 id=&#34;what-is-a-property-descriptor&#34;&gt;What is a Property Descriptor?&lt;/h2&gt;&#xA;&lt;p&gt;Every property in an object has hidden settings:&lt;/p&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;Whether its value can be changed (&lt;code&gt;writable&lt;/code&gt;),&lt;/li&gt;&#xA;&lt;li&gt;Whether it shows up during enumeration (&lt;code&gt;enumerable&lt;/code&gt;),&lt;/li&gt;&#xA;&lt;li&gt;Whether it can be deleted or reconfigured (&lt;code&gt;configurable&lt;/code&gt;).&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;p&gt;These settings are called &lt;strong&gt;property descriptors&lt;/strong&gt;.&lt;/p&gt;&#xA;&lt;h2 id=&#34;main-property-flags&#34;&gt;Main Property Flags:&lt;/h2&gt;&#xA;&lt;table&gt;&#xA;  &lt;thead&gt;&#xA;      &lt;tr&gt;&#xA;          &lt;th&gt;Flag&lt;/th&gt;&#xA;          &lt;th&gt;What it means&lt;/th&gt;&#xA;          &lt;th&gt;Default value&lt;/th&gt;&#xA;      &lt;/tr&gt;&#xA;  &lt;/thead&gt;&#xA;  &lt;tbody&gt;&#xA;      &lt;tr&gt;&#xA;          &lt;td&gt;&lt;code&gt;writable&lt;/code&gt;&lt;/td&gt;&#xA;          &lt;td&gt;Can the value be changed?&lt;/td&gt;&#xA;          &lt;td&gt;&lt;code&gt;true&lt;/code&gt;&lt;/td&gt;&#xA;      &lt;/tr&gt;&#xA;      &lt;tr&gt;&#xA;          &lt;td&gt;&lt;code&gt;enumerable&lt;/code&gt;&lt;/td&gt;&#xA;          &lt;td&gt;Will it show in loops (&lt;code&gt;for...in&lt;/code&gt;, &lt;code&gt;Object.keys&lt;/code&gt;)?&lt;/td&gt;&#xA;          &lt;td&gt;&lt;code&gt;true&lt;/code&gt;&lt;/td&gt;&#xA;      &lt;/tr&gt;&#xA;      &lt;tr&gt;&#xA;          &lt;td&gt;&lt;code&gt;configurable&lt;/code&gt;&lt;/td&gt;&#xA;          &lt;td&gt;Can the property be deleted or reconfigured?&lt;/td&gt;&#xA;          &lt;td&gt;&lt;code&gt;true&lt;/code&gt;&lt;/td&gt;&#xA;      &lt;/tr&gt;&#xA;  &lt;/tbody&gt;&#xA;&lt;/table&gt;&#xA;&lt;h2 id=&#34;getting-a-property-descriptor&#34;&gt;Getting a Property Descriptor&lt;/h2&gt;&#xA;&lt;p&gt;Use &lt;code&gt;Object.getOwnPropertyDescriptor(obj, prop)&lt;/code&gt;.&lt;/p&gt;</description>
+    </item>
     <item>
       <title>Live Collections in JavaScript</title>
       <link>http://localhost:1313/live_collections_in_javascript/</link>
