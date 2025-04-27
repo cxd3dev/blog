@@ -3,10 +3,13 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
     <loc>http://localhost:1313/</loc>
-    <lastmod>2025-04-26T18:53:24+03:00</lastmod>
+    <lastmod>2025-04-27T11:53:24+03:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/iterable_objects_in_js/</loc>
+    <lastmod>2025-04-27T11:53:24+03:00</lastmod>
   </url><url>
     <loc>http://localhost:1313/javascript/</loc>
-    <lastmod>2025-04-26T18:53:24+03:00</lastmod>
+    <lastmod>2025-04-27T11:53:24+03:00</lastmod>
   </url><url>
     <loc>http://localhost:1313/des%D1%81riptors_in_javascript/</loc>
     <lastmod>2025-04-26T18:53:24+03:00</lastmod>
