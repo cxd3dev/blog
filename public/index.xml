@@ -6,8 +6,15 @@
     <description>Recent content on Cxd3</description>
     <generator>Hugo</generator>
     <language>en</language>
-    <lastBuildDate>Mon, 28 Apr 2025 08:40:24 +0300</lastBuildDate>
+    <lastBuildDate>Mon, 28 Apr 2025 08:50:24 +0300</lastBuildDate>
     <atom:link href="http://localhost:1313/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>ClassList.toggle() in JavaScript</title>
+      <link>http://localhost:1313/classlist_toggle_in_js/</link>
+      <pubDate>Mon, 28 Apr 2025 08:50:24 +0300</pubDate>
+      <guid>http://localhost:1313/classlist_toggle_in_js/</guid>
+      <description>&lt;p&gt;When we want to add or remove a class based on its current presence, we use the toggle method from classList.&lt;/p&gt;&#xA;&lt;p&gt;Since toggle is a method and performs an action, we must always use parentheses () when calling it.&lt;/p&gt;&#xA;&lt;p&gt;If the class is present, toggle will remove it. If the class is absent, toggle will add it.&lt;/p&gt;&#xA;&lt;p&gt;Example of toggling a single class:&lt;/p&gt;&#xA;&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-javascript&#34; data-lang=&#34;javascript&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;kr&#34;&gt;const&lt;/span&gt; &lt;span class=&#34;nx&#34;&gt;menu&lt;/span&gt; &lt;span class=&#34;o&#34;&gt;=&lt;/span&gt; &lt;span class=&#34;nb&#34;&gt;document&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;.&lt;/span&gt;&lt;span class=&#34;nx&#34;&gt;querySelector&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;s1&#34;&gt;&amp;#39;.nav-menu&amp;#39;&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;);&lt;/span&gt;&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;nx&#34;&gt;menu&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;.&lt;/span&gt;&lt;span class=&#34;nx&#34;&gt;classList&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;.&lt;/span&gt;&lt;span class=&#34;nx&#34;&gt;toggle&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;s1&#34;&gt;&amp;#39;open&amp;#39;&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;);&lt;/span&gt;&#xA;&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;Each time this code runs, the &amp;ldquo;open&amp;rdquo; class will be added or removed depending on whether it is already there.&lt;/p&gt;</description>
+    </item>
     <item>
       <title>ClassList.remove() in JavaScript</title>
       <link>http://localhost:1313/classlist_remove_in_js/</link>
