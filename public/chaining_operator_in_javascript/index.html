@@ -95,39 +95,35 @@
             <time class="h5 gray title__date">24 April 2025</time>
         
 
-        <div><p>The optional chaining operator (<code>?.</code>) allows us to <strong>safely access</strong> object properties or call functions without risking errors if part of the path is <code>null</code> or <code>undefined</code>.<br>
-Instead of throwing errors, it simply returns <code>undefined</code> if something is missing.</p>
-<h2 id="simple-example">Simple Example</h2>
+        <div><p>The optional chaining operator (<code>?.</code>) allows us to safely access object properties or call functions without risking errors if part of the path is <code>null</code> or <code>undefined</code>.</p>
+<p>Instead of throwing errors, it simply returns <code>undefined</code> if something is missing.</p>
+<p>Simple Example:</p>
 <div class="highlight"><pre tabindex="0" class="chroma"><code class="language-javascript" data-lang="javascript"><span class="line"><span class="cl"><span class="kd">let</span> <span class="nx">user</span> <span class="o">=</span> <span class="p">{};</span>
 </span></span><span class="line"><span class="cl">
 </span></span><span class="line"><span class="cl"><span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nx">user</span><span class="p">.</span><span class="nx">address</span><span class="o">?</span><span class="p">.</span><span class="nx">street</span><span class="p">);</span> <span class="c1">// undefined (no error!)
-</span></span></span></code></pre></div><p><strong>What happens:</strong></p>
-<ul>
-<li><code>user</code> has no <code>address</code>.</li>
-<li>Instead of crashing with <code>Cannot read property 'street' of undefined</code>, we get <code>undefined</code> quietly.</li>
-</ul>
-<h2 id="without-optional-chaining">Without Optional Chaining</h2>
+</span></span></span></code></pre></div><p>What happens:
+<code>user</code> has no <code>address</code>.</p>
+<p>Instead of crashing with Cannot read property street of undefined, we get undefined quietly.</p>
+<h4 id="without-optional-chaining">Without Optional Chaining</h4>
 <div class="highlight"><pre tabindex="0" class="chroma"><code class="language-javascript" data-lang="javascript"><span class="line"><span class="cl"><span class="kd">let</span> <span class="nx">user</span> <span class="o">=</span> <span class="p">{};</span>
 </span></span><span class="line"><span class="cl">
 </span></span><span class="line"><span class="cl"><span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nx">user</span><span class="p">.</span><span class="nx">address</span><span class="p">.</span><span class="nx">street</span><span class="p">);</span>
 </span></span><span class="line"><span class="cl"><span class="c1">// ❌ Error! Cannot read property &#39;street&#39; of undefined
 </span></span></span></code></pre></div><p>Without <code>?.</code>, accessing a missing property would throw an error and break your script.</p>
-<h2 id="optional-chaining-with-functions">Optional Chaining with Functions</h2>
+<h4 id="optional-chaining-with-functions">Optional Chaining with Functions</h4>
 <p>The <code>?.</code> operator also works when calling functions.</p>
 <div class="highlight"><pre tabindex="0" class="chroma"><code class="language-javascript" data-lang="javascript"><span class="line"><span class="cl"><span class="kd">let</span> <span class="nx">user</span> <span class="o">=</span> <span class="p">{};</span>
 </span></span><span class="line"><span class="cl">
 </span></span><span class="line"><span class="cl"><span class="nx">user</span><span class="p">.</span><span class="nx">sayHi</span><span class="o">?</span><span class="p">.();</span> <span class="c1">// Nothing happens, no error
 </span></span></span></code></pre></div><p>If <code>sayHi</code> doesn&rsquo;t exist, the code simply does nothing without crashing.</p>
-<h2 id="when-to-use-optional-chaining">When to Use Optional Chaining</h2>
+<h4 id="when-to-use-optional-chaining">When to Use Optional Chaining</h4>
 <p>Use optional chaining when:</p>
-<ul>
-<li>Working with <strong>complex or dynamic data structures</strong>.</li>
-<li>You are <strong>not sure</strong> if intermediate properties or methods exist.</li>
-<li>You want <strong>safer</strong> and <strong>cleaner</strong> code without too many manual <code>if</code> checks.</li>
-</ul>
-<h2 id="notes">Notes</h2>
-<p>The optional chaining operator (<code>?.</code>) is a powerful feature in JavaScript that improves code safety and readability.<br>
-It allows you to work confidently with nested objects and functions, without worrying about errors from missing properties.</p>
+<p>Working with complex or dynamic data structures.</p>
+<p>You are not sure if intermediate properties or methods exist.</p>
+<p>You want safer and cleaner code without too many manual <code>if</code> checks.</p>
+<h3 id="notes">Notes</h3>
+<p>The optional chaining operator (<code>?.</code>) is a powerful feature in JavaScript that improves code safety and readability.</p>
+<p>It allows you to work confidently with nested objects and functions, without worrying about errors from missing properties.</p>
 </div>
     </div>
    </div>

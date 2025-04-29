@@ -95,15 +95,13 @@
             <time class="h5 gray title__date">22 April 2025</time>
         
 
-        <div><p>When working with web pages, it&rsquo;s important to understand when the DOM is ready and how scripts load and execute.<br>
-Let&rsquo;s explore the key concepts: <code>DOMContentLoaded</code>, <code>load</code>, <code>defer</code>, <code>async</code>, and dynamic script creation.</p>
-<h2 id="domcontentloaded-and-load-events">DOMContentLoaded and load events</h2>
+        <div><p>When working with web pages, it&rsquo;s important to understand when the DOM is ready and how scripts load and execute.</p>
+<p>Let&rsquo;s explore the key concepts: <code>DOMContentLoaded</code>, <code>load</code>, <code>defer</code>, <code>async</code>, and dynamic script creation.</p>
+<h4 id="domcontentloaded-and-load-events">DOMContentLoaded and load events</h4>
 <p>There are two key events to know:</p>
-<ul>
-<li><strong>DOMContentLoaded</strong> fires when the HTML is fully loaded and parsed, but images and styles may still be loading.</li>
-<li><strong>load</strong> fires when the entire page is fully loaded, including images, styles, and fonts.</li>
-</ul>
-<p><strong>Example:</strong></p>
+<p>DOMContentLoaded fires when the HTML is fully loaded and parsed, but images and styles may still be loading.</p>
+<p>load fires when the entire page is fully loaded, including images, styles, and fonts.</p>
+<p>Example:</p>
 <div class="highlight"><pre tabindex="0" class="chroma"><code class="language-javascript" data-lang="javascript"><span class="line"><span class="cl"><span class="nb">document</span><span class="p">.</span><span class="nx">addEventListener</span><span class="p">(</span><span class="s1">&#39;DOMContentLoaded&#39;</span><span class="p">,</span> <span class="kd">function</span><span class="p">()</span> <span class="p">{</span>
 </span></span><span class="line"><span class="cl">  <span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="s1">&#39;DOM is fully loaded and parsed!&#39;</span><span class="p">);</span>
 </span></span><span class="line"><span class="cl"><span class="p">});</span>
@@ -111,66 +109,52 @@ Let&rsquo;s explore the key concepts: <code>DOMContentLoaded</code>, <code>load<
 </span></span><span class="line"><span class="cl"><span class="nb">window</span><span class="p">.</span><span class="nx">addEventListener</span><span class="p">(</span><span class="s1">&#39;load&#39;</span><span class="p">,</span> <span class="kd">function</span><span class="p">()</span> <span class="p">{</span>
 </span></span><span class="line"><span class="cl">  <span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="s1">&#39;Everything is loaded, including images and styles!&#39;</span><span class="p">);</span>
 </span></span><span class="line"><span class="cl"><span class="p">});</span>
-</span></span></code></pre></div><p><strong>When to use each:</strong></p>
-<ul>
-<li><code>DOMContentLoaded</code> is great for working with the structure of the page immediately.</li>
-<li><code>load</code> is better when you need to wait for all resources to be available.</li>
-</ul>
-<h2 id="defer-attribute">Defer attribute</h2>
-<p><strong><code>defer</code></strong> tells the browser:<br>
-<em>&ldquo;Download me in parallel with the HTML, but only execute me after the HTML is fully parsed.&rdquo;</em></p>
-<ul>
-<li>Scripts with <code>defer</code> are loaded asynchronously but executed in order after <code>DOMContentLoaded</code>.</li>
-<li>Great for DOM manipulation scripts.</li>
-</ul>
-<p><strong>Example:</strong></p>
+</span></span></code></pre></div><p>When to use each:</p>
+<p><code>DOMContentLoaded</code> is great for working with the structure of the page immediately.</p>
+<p><code>load</code> is better when you need to wait for all resources to be available.</p>
+<h4 id="defer-attribute">Defer attribute</h4>
+<p><code>defer</code> tells the browser:</p>
+<p>Download me in parallel with the HTML, but only execute me after the HTML is fully parsed.</p>
+<p>Scripts with <code>defer</code> are loaded asynchronously but executed in order after <code>DOMContentLoaded</code>.</p>
+<p>Great for DOM manipulation scripts.</p>
+<p>Example:</p>
 <div class="highlight"><pre tabindex="0" class="chroma"><code class="language-html" data-lang="html"><span class="line"><span class="cl"><span class="p">&lt;</span><span class="nt">script</span> <span class="na">src</span><span class="o">=</span><span class="s">&#34;app.js&#34;</span> <span class="na">defer</span><span class="p">&gt;&lt;/</span><span class="nt">script</span><span class="p">&gt;</span>
 </span></span></code></pre></div><div class="highlight"><pre tabindex="0" class="chroma"><code class="language-javascript" data-lang="javascript"><span class="line"><span class="cl"><span class="c1">// app.js
 </span></span></span><span class="line"><span class="cl"><span class="c1"></span><span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="s1">&#39;DOM is ready, now running deferred script!&#39;</span><span class="p">);</span>
-</span></span></code></pre></div><p><strong>Quick summary:</strong></p>
-<ul>
-<li><code>defer</code> = doesn&rsquo;t block HTML parsing + waits for the full document.</li>
-</ul>
-<h2 id="async-attribute">Async attribute</h2>
-<p><strong><code>async</code></strong> works differently:<br>
-<em>&ldquo;Download me in parallel with the HTML, and execute me immediately once ready!&rdquo;</em></p>
-<ul>
-<li>Scripts with <code>async</code> are loaded asynchronously and executed as soon as they are downloaded.</li>
-<li>Execution order is not guaranteed.</li>
-</ul>
-<p><strong>Example:</strong></p>
+</span></span></code></pre></div><p>Quick summary:</p>
+<p><code>defer</code> = doesn&rsquo;t block HTML parsing + waits for the full document.</p>
+<h4 id="async-attribute">Async attribute</h4>
+<p><code>async</code> works differently:</p>
+<p>Download me in parallel with the HTML, and execute me immediately once ready!</p>
+<p>Scripts with <code>async</code> are loaded asynchronously and executed as soon as they are downloaded.</p>
+<p>Execution order is not guaranteed.</p>
+<p>Example:</p>
 <div class="highlight"><pre tabindex="0" class="chroma"><code class="language-html" data-lang="html"><span class="line"><span class="cl"><span class="p">&lt;</span><span class="nt">script</span> <span class="na">src</span><span class="o">=</span><span class="s">&#34;analytics.js&#34;</span> <span class="na">async</span><span class="p">&gt;&lt;/</span><span class="nt">script</span><span class="p">&gt;</span>
 </span></span></code></pre></div><div class="highlight"><pre tabindex="0" class="chroma"><code class="language-javascript" data-lang="javascript"><span class="line"><span class="cl"><span class="c1">// analytics.js
 </span></span></span><span class="line"><span class="cl"><span class="c1"></span><span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="s1">&#39;Analytics script running independently!&#39;</span><span class="p">);</span>
-</span></span></code></pre></div><p><strong>Quick summary:</strong></p>
-<ul>
-<li><code>async</code> = script lives its own life.</li>
-<li>Best for independent scripts like analytics or tracking codes.</li>
-</ul>
-<h2 id="dynamically-creating-and-loading-scripts">Dynamically creating and loading scripts</h2>
-<p>Sometimes you may want to load a script dynamically — after an event or condition is met.<br>
-You can create a <code>&lt;script&gt;</code> element, set its <code>src</code>, and add it to the <code>&lt;head&gt;</code>.</p>
-<p><strong>Example:</strong></p>
+</span></span></code></pre></div><p>Quick summary:</p>
+<p><code>async</code> = script lives its own life.</p>
+<p>Best for independent scripts like analytics or tracking codes.</p>
+<h4 id="dynamically-creating-and-loading-scripts">Dynamically creating and loading scripts</h4>
+<p>Sometimes you may want to load a script dynamically — after an event or condition is met.</p>
+<p>You can create a <code>&lt;script&gt;</code> element, set its <code>src</code>, and add it to the <code>&lt;head&gt;</code></p>
+<p>Example:</p>
 <div class="highlight"><pre tabindex="0" class="chroma"><code class="language-javascript" data-lang="javascript"><span class="line"><span class="cl"><span class="kr">const</span> <span class="nx">script</span> <span class="o">=</span> <span class="nb">document</span><span class="p">.</span><span class="nx">createElement</span><span class="p">(</span><span class="s1">&#39;script&#39;</span><span class="p">);</span>
 </span></span><span class="line"><span class="cl"><span class="nx">script</span><span class="p">.</span><span class="nx">src</span> <span class="o">=</span> <span class="s1">&#39;https://example.com/library.js&#39;</span><span class="p">;</span>
 </span></span><span class="line"><span class="cl"><span class="nx">script</span><span class="p">.</span><span class="nx">defer</span> <span class="o">=</span> <span class="kc">true</span><span class="p">;</span> <span class="c1">// or async = true if you want
 </span></span></span><span class="line"><span class="cl"><span class="c1"></span><span class="nb">document</span><span class="p">.</span><span class="nx">head</span><span class="p">.</span><span class="nx">appendChild</span><span class="p">(</span><span class="nx">script</span><span class="p">);</span>
-</span></span></code></pre></div><p><strong>Explanation:</strong></p>
-<ul>
-<li>We create a <code>script</code> element.</li>
-<li>Set the loading address with <code>src</code>.</li>
-<li>(Optional) Add <code>defer</code> or <code>async</code>.</li>
-<li>Append the script to <code>&lt;head&gt;</code>, and it starts loading immediately.</li>
-</ul>
-<p>Dynamic script loading gives you flexibility to control <strong>when</strong> and <strong>what</strong> scripts are loaded!</p>
-<h2 id="notes">Notes</h2>
+</span></span></code></pre></div><p>Explanation:</p>
+<p>We create a <code>script</code> element.</p>
+<p>Set the loading address with <code>src</code></p>
+<p>(Optional) Add <code>defer</code> or <code>async</code></p>
+<p>Append the script to <code>&lt;head&gt;</code>, and it starts loading immediately.</p>
+<p>Dynamic script loading gives you flexibility to control when and what scripts are loaded!</p>
+<h3 id="notes">Notes</h3>
 <p>Today we explored:</p>
-<ul>
-<li>DOMContentLoaded and load events.</li>
-<li><code>defer</code> and <code>async</code> script loading.</li>
-<li>Dynamically adding scripts with <code>script.src</code>.</li>
-<li>How and when to control script execution for better page performance.</li>
-</ul>
+<p>DOMContentLoaded and load events.</p>
+<p><code>defer</code> and <code>async</code> script loading.</p>
+<p>Dynamically adding scripts with <code>script.src</code></p>
+<p>How and when to control script execution for better page performance.</p>
 <p>Understanding these concepts helps you build faster, more efficient web pages!</p>
 </div>
     </div>

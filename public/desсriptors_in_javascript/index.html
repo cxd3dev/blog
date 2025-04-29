@@ -95,17 +95,14 @@
             <time class="h5 gray title__date">26 April 2025</time>
         
 
-        <div><h2 id="what-is-a-property-descriptor">What is a Property Descriptor?</h2>
-<p>Every property in an object has hidden settings:</p>
-<ul>
-<li>Whether its value can be changed (<code>writable</code>),</li>
-<li>Whether it shows up during enumeration (<code>enumerable</code>),</li>
-<li>Whether it can be deleted or reconfigured (<code>configurable</code>).</li>
-</ul>
+        <div><p>Every property in an object has hidden settings:</p>
+<p>Whether its value can be changed (<code>writable</code>),</p>
+<p>Whether it shows up during enumeration (<code>enumerable</code>),</p>
+<p>Whether it can be deleted or reconfigured (<code>configurable</code>).</p>
 <p>These settings are called <strong>property descriptors</strong>.</p>
-<h2 id="getting-a-property-descriptor">Getting a Property Descriptor</h2>
+<h3 id="getting-a-property-descriptor">Getting a Property Descriptor</h3>
 <p>Use: getOwnPropertyDescriptor(obj, prop).</p>
-<p><strong>Example with Mia:</strong></p>
+<p>Example with Mia:</p>
 <div class="highlight"><pre tabindex="0" class="chroma"><code class="language-javascript" data-lang="javascript"><span class="line"><span class="cl"><span class="kr">const</span> <span class="nx">mia</span> <span class="o">=</span> <span class="p">{</span>
 </span></span><span class="line"><span class="cl">  <span class="nx">name</span><span class="o">:</span> <span class="s1">&#39;Mia&#39;</span><span class="p">,</span>
 </span></span><span class="line"><span class="cl">  <span class="nx">age</span><span class="o">:</span> <span class="mi">23</span>
@@ -113,9 +110,9 @@
 </span></span><span class="line"><span class="cl">
 </span></span><span class="line"><span class="cl"><span class="kd">let</span> <span class="nx">descriptor</span> <span class="o">=</span> <span class="nb">Object</span><span class="p">.</span><span class="nx">getOwnPropertyDescriptor</span><span class="p">(</span><span class="nx">mia</span><span class="p">,</span> <span class="s1">&#39;age&#39;</span><span class="p">);</span>
 </span></span><span class="line"><span class="cl"><span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nx">descriptor</span><span class="p">);</span>
-</span></span></code></pre></div><h2 id="defining-a-property-descriptor">Defining a Property Descriptor</h2>
+</span></span></code></pre></div><h4 id="defining-a-property-descriptor">Defining a Property Descriptor</h4>
 <p>Use: defineProperty(obj, prop, descriptor).</p>
-<p><strong>Example with Eva:</strong></p>
+<p>Example with Eva:</p>
 <div class="highlight"><pre tabindex="0" class="chroma"><code class="language-javascript" data-lang="javascript"><span class="line"><span class="cl"><span class="kr">const</span> <span class="nx">eva</span> <span class="o">=</span> <span class="p">{};</span>
 </span></span><span class="line"><span class="cl">
 </span></span><span class="line"><span class="cl"><span class="nb">Object</span><span class="p">.</span><span class="nx">defineProperty</span><span class="p">(</span><span class="nx">eva</span><span class="p">,</span> <span class="s1">&#39;isCoder&#39;</span><span class="p">,</span> <span class="p">{</span>
@@ -128,8 +125,8 @@
 </span></span><span class="line"><span class="cl"><span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nx">eva</span><span class="p">.</span><span class="nx">isCoder</span><span class="p">);</span> <span class="c1">// true
 </span></span></span><span class="line"><span class="cl"><span class="c1"></span><span class="nx">eva</span><span class="p">.</span><span class="nx">isCoder</span> <span class="o">=</span> <span class="kc">false</span><span class="p">;</span>
 </span></span><span class="line"><span class="cl"><span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nx">eva</span><span class="p">.</span><span class="nx">isCoder</span><span class="p">);</span> <span class="c1">// still true!
-</span></span></span></code></pre></div><h2 id="defining-multiple-properties-defineproperties">Defining Multiple Properties: defineProperties()</h2>
-<p><strong>Example with Elle:</strong></p>
+</span></span></span></code></pre></div><h4 id="defining-multiple-properties-defineproperties">Defining Multiple Properties: defineProperties()</h4>
+<p>Example with Elle:</p>
 <div class="highlight"><pre tabindex="0" class="chroma"><code class="language-javascript" data-lang="javascript"><span class="line"><span class="cl"><span class="kr">const</span> <span class="nx">elle</span> <span class="o">=</span> <span class="p">{};</span>
 </span></span><span class="line"><span class="cl">
 </span></span><span class="line"><span class="cl"><span class="nb">Object</span><span class="p">.</span><span class="nx">defineProperties</span><span class="p">(</span><span class="nx">elle</span><span class="p">,</span> <span class="p">{</span>
@@ -147,11 +144,9 @@
 </span></span><span class="line"><span class="cl">
 </span></span><span class="line"><span class="cl"><span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nx">elle</span><span class="p">.</span><span class="nx">city</span><span class="p">);</span> <span class="c1">// Paris
 </span></span></span><span class="line"><span class="cl"><span class="c1"></span><span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nx">elle</span><span class="p">.</span><span class="nx">age</span><span class="p">);</span>  <span class="c1">// 21
-</span></span></span></code></pre></div><h2 id="fun-tricks">Fun Tricks:</h2>
-<ul>
-<li><strong>Hidden property:</strong><br>
-Make a property invisible during enumeration (<code>enumerable: false</code>).</li>
-</ul>
+</span></span></span></code></pre></div><h3 id="fun-tricks">Fun Tricks:</h3>
+<p>Hidden property:</p>
+<p>Make a property invisible during enumeration <code>enumerable: false</code></p>
 <div class="highlight"><pre tabindex="0" class="chroma"><code class="language-javascript" data-lang="javascript"><span class="line"><span class="cl"><span class="kr">const</span> <span class="nx">anna</span> <span class="o">=</span> <span class="p">{};</span>
 </span></span><span class="line"><span class="cl">
 </span></span><span class="line"><span class="cl"><span class="nb">Object</span><span class="p">.</span><span class="nx">defineProperty</span><span class="p">(</span><span class="nx">anna</span><span class="p">,</span> <span class="s1">&#39;secret&#39;</span><span class="p">,</span> <span class="p">{</span>
@@ -161,23 +156,15 @@ Make a property invisible during enumeration (<code>enumerable: false</code>).</
 </span></span><span class="line"><span class="cl">
 </span></span><span class="line"><span class="cl"><span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nb">Object</span><span class="p">.</span><span class="nx">keys</span><span class="p">(</span><span class="nx">anna</span><span class="p">));</span> <span class="c1">// []
 </span></span></span><span class="line"><span class="cl"><span class="c1"></span><span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nx">anna</span><span class="p">.</span><span class="nx">secret</span><span class="p">);</span> <span class="c1">// &#34;I love coding&#34;
-</span></span></span></code></pre></div><ul>
-<li>
-<p><strong>Immutable property:</strong><br>
-Set <code>writable: false</code> to lock the value.</p>
-</li>
-<li>
-<p><strong>Protected structure:</strong><br>
+</span></span></span></code></pre></div><p>Immutable property:</p>
+<p>Set <code>writable: false</code> to lock the value.</p>
+<p>Protected structure:<br>
 Set <code>configurable: false</code> to prevent deleting the property.</p>
-</li>
-</ul>
-<h2 id="notes">Notes</h2>
-<ul>
-<li><code>writable: false</code> locks a property&rsquo;s value.</li>
-<li><code>enumerable: false</code> hides a property during loops.</li>
-<li><code>configurable: false</code> makes a property undeletable and its settings permanent.</li>
-<li>Mastering property descriptors gives you fine-grained control over how objects behave and interact in your applications.</li>
-</ul>
+<h3 id="notes">Notes</h3>
+<p><code>writable: false</code> locks a property&rsquo;s value.</p>
+<p><code>enumerable: false</code> hides a property during loops.</p>
+<p><code>configurable: false</code> makes a property undeletable and its settings permanent.</p>
+<p>Mastering property descriptors gives you fine-grained control over how objects behave and interact in your applications.</p>
 </div>
     </div>
    </div>

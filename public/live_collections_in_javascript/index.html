@@ -95,13 +95,11 @@
             <time class="h5 gray title__date">25 April 2025</time>
         
 
-        <div><p>A <strong>live collection</strong> is a special browser object that <strong>automatically updates</strong> when the DOM changes.</p>
+        <div><p>A live collection is a special browser object that automatically updates when the DOM changes.</p>
 <p>In other words:</p>
-<ul>
-<li>When you select elements using <code>getElementsByTagName</code>, <code>getElementsByClassName</code>, or <code>children</code>,</li>
-<li>You get a <strong>live collection</strong> that <strong>always reflects the current state</strong> of the DOM, without needing a new query.</li>
-</ul>
-<h3 id="example">Example</h3>
+<p>When you select elements using <code>getElementsByTagName</code>, <code>getElementsByClassName</code>, or <code>children</code>,</p>
+<p>You get a live collection that always reflects the current state of the DOM, without needing a new query.</p>
+<p>Example:</p>
 <div class="highlight"><pre tabindex="0" class="chroma"><code class="language-javascript" data-lang="javascript"><span class="line"><span class="cl"><span class="kr">const</span> <span class="nx">list</span> <span class="o">=</span> <span class="nb">document</span><span class="p">.</span><span class="nx">getElementsByTagName</span><span class="p">(</span><span class="s1">&#39;li&#39;</span><span class="p">);</span> <span class="c1">// HTMLCollection — live collection
 </span></span></span><span class="line"><span class="cl"><span class="c1"></span><span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nx">list</span><span class="p">.</span><span class="nx">length</span><span class="p">);</span> <span class="c1">// for example 3
 </span></span></span><span class="line"><span class="cl"><span class="c1"></span>
@@ -109,31 +107,25 @@
 </span></span><span class="line"><span class="cl"><span class="nb">document</span><span class="p">.</span><span class="nx">body</span><span class="p">.</span><span class="nx">appendChild</span><span class="p">(</span><span class="nx">newLi</span><span class="p">);</span>
 </span></span><span class="line"><span class="cl">
 </span></span><span class="line"><span class="cl"><span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nx">list</span><span class="p">.</span><span class="nx">length</span><span class="p">);</span> <span class="c1">// now 4!
-</span></span></span></code></pre></div><p><strong>What happens:</strong></p>
-<ul>
-<li>We selected <code>list</code> once.</li>
-<li>Then we added a new <code>&lt;li&gt;</code>.</li>
-<li>The <code>list.length</code> <strong>automatically updated</strong> without a new query!</li>
-</ul>
-<h2 id="key-features-of-live-collections">Key Features of Live Collections</h2>
-<ul>
-<li>They <strong>react to any changes</strong> in the DOM.</li>
-<li>They <strong>don&rsquo;t require new selection calls</strong>.</li>
-<li>They <strong>lack full array methods</strong> like <code>map</code>, <code>filter</code>, etc.</li>
-<li>For iteration, you can use <code>for...of</code>, <code>for</code>, or convert them with <code>Array.from()</code> if needed.</li>
-</ul>
-<h2 id="examples-of-live-collections">Examples of Live Collections</h2>
-<p><code>getElementsByTagName('div')</code>
-<code>getElementsByClassName('button')</code>
-<code>element.children</code></p>
-<h2 id="be-careful">Be Careful</h2>
-<ul>
-<li>If the DOM changes frequently during script execution, the live collection updates too, which might affect your logic unexpectedly.</li>
-</ul>
-<h2 id="notes">Notes</h2>
-<p>Live collections are powerful and reactive.<br>
-They keep up with DOM changes automatically, but you should be careful when writing scripts that rely on a stable structure.<br>
-Understanding them gives you better control and safer manipulation of your web pages.</p>
+</span></span></span></code></pre></div><p>What happens:</p>
+<p>We selected <code>list</code> once.</p>
+<p>Then we added a new <code>&lt;li&gt;</code>.</p>
+<p>The <code>list.length</code> <strong>automatically updated</strong> without a new query!</p>
+<h3 id="key-features-of-live-collections">Key Features of Live Collections</h3>
+<p>They react to any changes in the DOM.</p>
+<p>They don&rsquo;t require new selection calls.</p>
+<p>They lack full array methods like <code>map</code>, <code>filter</code>, etc.</p>
+<p>For iteration, you can use <code>for...of</code>, <code>for</code>, or convert them with <code>Array.from()</code> if needed.</p>
+<h3 id="examples-of-live-collections">Examples of Live Collections</h3>
+<p><code>getElementsByTagName('div')</code></p>
+<p><code>getElementsByClassName('button')</code></p>
+<p><code>element.children</code></p>
+<h3 id="be-careful">Be Careful</h3>
+<p>If the DOM changes frequently during script execution, the live collection updates too, which might affect your logic unexpectedly.</p>
+<h3 id="notes">Notes</h3>
+<p>Live collections are powerful and reactive.</p>
+<p>They keep up with DOM changes automatically, but you should be careful when writing scripts that rely on a stable structure.</p>
+<p>Understanding them gives you better control and safer manipulation of your web pages.</p>
 </div>
     </div>
    </div>

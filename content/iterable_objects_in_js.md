@@ -7,16 +7,21 @@ categories = [ "javascript" ]
 An **iterable** is an object that can be iterated over with `for...of` because it implements a special method: `Symbol.iterator`.
 
 In simple words:  
-**If an object has `obj[Symbol.iterator]`, it is iterable!**
+
+If an object has `obj[Symbol.iterator]`, it is iterable!
 
 
 #### Examples of Iterables
 
-**Arrays:** `['Mia', 'Eva', 'Elle']`
-**Strings:** `'Hello'`
-**Map:** `new Map()`
-**Set:** `new Set()`
-**NodeList:** (querySelectorAll('div'))
+Arrays: `['Mia', 'Eva', 'Elle']`
+
+Strings: `'Hello'`
+
+Map: `new Map()`
+
+Set: `new Set()`
+
+NodeList: (querySelectorAll('div'))
 
 
 #### Simple Example
@@ -37,7 +42,7 @@ This method returns an **iterator** object with a `next()` method.
 Each call to `next()` gives the next value.
 
 
-**Mini-emulation:**
+Mini-emulation:
 
 ```javascript
 const girls = ['Mia', 'Eva', 'Elle'];
@@ -51,9 +56,11 @@ console.log(iterator.next()); // { value: undefined, done: true }
 
 #### Why It Matters
 
-- To create custom iterable objects.
-- To understand how `for...of`, destructuring, and spread operators `[...]` work.
-- To realize why plain objects `{}` are not iterable by default.
+To create custom iterable objects.
+
+To understand how `for...of`, destructuring, and spread operators `[...]` work.
+
+To realize why plain objects `{}` are not iterable by default.
 
 
 #### Custom Iterable Example
@@ -88,6 +95,6 @@ for (const skill of anna) {
 
 #### Notes
 
-- Iterables are everywhere: arrays, strings, sets, maps, NodeLists.
-- Understanding iterables opens the door to advanced techniques in JavaScript.
-- You can build your own iterables to control how your data is accessed and used.
+1. Iterables are everywhere: arrays, strings, sets, maps, NodeLists.
+2.  Understanding iterables opens the door to advanced techniques in JavaScript.
+3.  You can build your own iterables to control how your data is accessed and used.

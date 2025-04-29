@@ -4,21 +4,23 @@ title = 'Property Descriptors and Useful Methods in JavaScript'
 categories = [ "javascript" ]
 +++
 
-## What is a Property Descriptor?
 
 Every property in an object has hidden settings:  
-- Whether its value can be changed (`writable`),  
-- Whether it shows up during enumeration (`enumerable`),  
-- Whether it can be deleted or reconfigured (`configurable`).
+
+Whether its value can be changed (`writable`),  
+
+Whether it shows up during enumeration (`enumerable`),  
+
+Whether it can be deleted or reconfigured (`configurable`).
 
 These settings are called **property descriptors**.
 
 
-## Getting a Property Descriptor
+### Getting a Property Descriptor
 
 Use: getOwnPropertyDescriptor(obj, prop).
 
-**Example with Mia:**
+Example with Mia:
 
 ```javascript
 const mia = {
@@ -31,11 +33,11 @@ console.log(descriptor);
 ```
 
 
-## Defining a Property Descriptor
+#### Defining a Property Descriptor
 
 Use: defineProperty(obj, prop, descriptor).
 
-**Example with Eva:**
+Example with Eva:
 
 ```javascript
 const eva = {};
@@ -53,9 +55,9 @@ console.log(eva.isCoder); // still true!
 ```
 
 
-## Defining Multiple Properties: defineProperties()
+#### Defining Multiple Properties: defineProperties()
 
-**Example with Elle:**
+Example with Elle:
 
 ```javascript
 const elle = {};
@@ -78,10 +80,11 @@ console.log(elle.age);  // 21
 ```
 
 
-## Fun Tricks:
+### Fun Tricks:
 
-- **Hidden property:**  
-  Make a property invisible during enumeration (`enumerable: false`).
+Hidden property:
+
+Make a property invisible during enumeration `enumerable: false`
 
 ```javascript
 const anna = {};
@@ -96,16 +99,20 @@ console.log(anna.secret); // "I love coding"
 ```
 
 
-- **Immutable property:**  
-  Set `writable: false` to lock the value.
+Immutable property:
 
-- **Protected structure:**  
-  Set `configurable: false` to prevent deleting the property.
+Set `writable: false` to lock the value.
+
+Protected structure:  
+Set `configurable: false` to prevent deleting the property.
 
 
-## Notes
+### Notes
 
-- `writable: false` locks a property's value.
-- `enumerable: false` hides a property during loops.
-- `configurable: false` makes a property undeletable and its settings permanent.
-- Mastering property descriptors gives you fine-grained control over how objects behave and interact in your applications.
+`writable: false` locks a property's value.
+
+`enumerable: false` hides a property during loops.
+
+`configurable: false` makes a property undeletable and its settings permanent.
+
+Mastering property descriptors gives you fine-grained control over how objects behave and interact in your applications.

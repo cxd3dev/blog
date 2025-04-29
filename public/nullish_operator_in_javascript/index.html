@@ -95,42 +95,36 @@
             <time class="h5 gray title__date">23 April 2025</time>
         
 
-        <div><p>The nullish coalescing operator (<code>??</code>) is a way to set a <strong>default value</strong> <strong>only</strong> if the variable is <code>null</code> or <code>undefined</code>.<br>
-It is different from the <code>||</code> operator, which treats more values (like <code>0</code>, <code>''</code>, <code>false</code>) as &ldquo;empty.&rdquo;</p>
-<h2 id="simple-example">Simple Example</h2>
+        <div><p>The nullish coalescing operator (<code>??</code>) is a way to set a default value  only if the variable is <code>null</code> or <code>undefined</code>.<br>
+It is different from the <code>||</code> operator, which treats more values like <code>0</code>, <code>''</code>, <code>false</code> as &ldquo;empty.&rdquo;</p>
+<p>Simple Example:</p>
 <div class="highlight"><pre tabindex="0" class="chroma"><code class="language-javascript" data-lang="javascript"><span class="line"><span class="cl"><span class="kd">let</span> <span class="nx">userName</span><span class="p">;</span>
 </span></span><span class="line"><span class="cl"><span class="kd">let</span> <span class="nx">defaultName</span> <span class="o">=</span> <span class="s1">&#39;Guest&#39;</span><span class="p">;</span>
 </span></span><span class="line"><span class="cl">
 </span></span><span class="line"><span class="cl"><span class="kd">let</span> <span class="nx">nameToShow</span> <span class="o">=</span> <span class="nx">userName</span> <span class="o">??</span> <span class="nx">defaultName</span><span class="p">;</span>
 </span></span><span class="line"><span class="cl"><span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nx">nameToShow</span><span class="p">);</span> <span class="c1">// Guest
-</span></span></span></code></pre></div><p><strong>What happens:</strong></p>
-<ul>
-<li><code>userName</code> is <code>undefined</code>.</li>
-<li>The <code>??</code> operator picks <code>defaultName</code> instead.</li>
-</ul>
-<h2 id="difference-from-">Difference from <code>||</code></h2>
+</span></span></span></code></pre></div><p>What happens:</p>
+<p><code>userName</code> is <code>undefined</code>.</p>
+<p>The <code>??</code> operator picks <code>defaultName</code> instead.</p>
+<h4 id="difference-from-">Difference from <code>||</code></h4>
 <p>The <code>||</code> operator checks for any falsy value: <code>0</code>, <code>''</code>, <code>false</code>, <code>null</code>, or <code>undefined</code>.<br>
 The <code>??</code> operator only checks for <code>null</code> or <code>undefined</code>.</p>
-<p><strong>Example:</strong></p>
+<p>Example:</p>
 <div class="highlight"><pre tabindex="0" class="chroma"><code class="language-javascript" data-lang="javascript"><span class="line"><span class="cl"><span class="kd">let</span> <span class="nx">points</span> <span class="o">=</span> <span class="mi">0</span><span class="p">;</span>
 </span></span><span class="line"><span class="cl">
 </span></span><span class="line"><span class="cl"><span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nx">points</span> <span class="o">||</span> <span class="mi">100</span><span class="p">);</span> <span class="c1">// 100 (bad: 0 is treated as falsy)
 </span></span></span><span class="line"><span class="cl"><span class="c1"></span><span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nx">points</span> <span class="o">??</span> <span class="mi">100</span><span class="p">);</span> <span class="c1">// 0 (good: 0 is kept)
-</span></span></span></code></pre></div><p><strong>Explanation:</strong></p>
-<ul>
-<li>With <code>||</code>, <code>0</code> is treated as &ldquo;empty&rdquo; and replaced.</li>
-<li>With <code>??</code>, <code>0</code> is considered a valid value and kept.</li>
-</ul>
-<h2 id="when-to-use-">When to Use (??)</h2>
+</span></span></span></code></pre></div><p>Explanation:</p>
+<p>With <code>||</code>, <code>0</code> is treated as &ldquo;empty&rdquo; and replaced.</p>
+<p>With <code>??</code>, <code>0</code> is considered a valid value and kept.</p>
+<h4 id="when-to-use-">When to Use (??)</h4>
 <p>Use <code>??</code> when:</p>
-<ul>
-<li>You expect <code>0</code>, <code>false</code>, or <code>''</code> to be valid values.</li>
-<li>You only want to provide a fallback for <code>null</code> or <code>undefined</code>.</li>
-</ul>
+<p>You expect <code>0</code>, <code>false</code>, or <code>''</code> to be valid values.</p>
+<p>You only want to provide a fallback for <code>null</code> or <code>undefined</code>.</p>
 <p>This ensures that meaningful values are not accidentally replaced.</p>
-<h2 id="notes">Notes</h2>
-<p>The nullish coalescing operator (<code>??</code>) makes it easy to set safe default values in JavaScript without incorrectly replacing valid data like <code>0</code> or <code>false</code>.<br>
-It is a clean and powerful tool for handling optional values.</p>
+<h3 id="notes">Notes</h3>
+<p>The nullish coalescing operator (<code>??</code>) makes it easy to set safe default values in JavaScript without incorrectly replacing valid data like <code>0</code> or <code>false</code>.</p>
+<p>It is a clean and powerful tool for handling optional values.</p>
 </div>
     </div>
    </div>

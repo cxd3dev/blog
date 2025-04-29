@@ -4,14 +4,16 @@ title = 'Live Collections in JavaScript'
 categories = ["javascript"]
 +++
 
-A **live collection** is a special browser object that **automatically updates** when the DOM changes.
+A live collection is a special browser object that automatically updates when the DOM changes.
 
 In other words:
-- When you select elements using `getElementsByTagName`, `getElementsByClassName`, or `children`,
-- You get a **live collection** that **always reflects the current state** of the DOM, without needing a new query.
+
+When you select elements using `getElementsByTagName`, `getElementsByClassName`, or `children`,
+
+You get a live collection that always reflects the current state of the DOM, without needing a new query.
 
 
-### Example
+Example:
 
 ```javascript
 const list = document.getElementsByTagName('li'); // HTMLCollection — live collection
@@ -23,34 +25,44 @@ document.body.appendChild(newLi);
 console.log(list.length); // now 4!
 ```
 
-**What happens:**  
-- We selected `list` once.
-- Then we added a new `<li>`.
-- The `list.length` **automatically updated** without a new query!
+What happens:
+
+We selected `list` once.
+
+Then we added a new `<li>`.
+
+The `list.length` **automatically updated** without a new query!
 
 
-## Key Features of Live Collections
+### Key Features of Live Collections
 
-- They **react to any changes** in the DOM.
-- They **don't require new selection calls**.
-- They **lack full array methods** like `map`, `filter`, etc.
-- For iteration, you can use `for...of`, `for`, or convert them with `Array.from()` if needed.
+They react to any changes in the DOM.
 
+They don't require new selection calls.
 
-## Examples of Live Collections
+They lack full array methods like `map`, `filter`, etc.
 
- `getElementsByTagName('div')`
- `getElementsByClassName('button')`
- `element.children`
+For iteration, you can use `for...of`, `for`, or convert them with `Array.from()` if needed.
 
 
-## Be Careful
+### Examples of Live Collections
 
-- If the DOM changes frequently during script execution, the live collection updates too, which might affect your logic unexpectedly.
+`getElementsByTagName('div')`
+
+`getElementsByClassName('button')`
+
+`element.children`
 
 
-## Notes
+### Be Careful
+
+If the DOM changes frequently during script execution, the live collection updates too, which might affect your logic unexpectedly.
+
+
+### Notes
 
 Live collections are powerful and reactive.  
+
 They keep up with DOM changes automatically, but you should be careful when writing scripts that rely on a stable structure.  
+
 Understanding them gives you better control and safer manipulation of your web pages.
