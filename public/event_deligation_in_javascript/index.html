@@ -4,7 +4,7 @@
     <link rel="icon" type="image/x-icon" href="../images/favicon.ico">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Categories</title>
+    <title>Event Delegation in JavaScript</title>
     <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/particles.js@2.0.0/particles.min.js"></script>
     <script>
@@ -84,99 +84,37 @@
       </div>
 </nav>
         
-<h2>Categories</h2>
-
-
-
 <div class="list">
-  
-  <h3>April 2025</h3> 
-  <ul>
-      
-          <li>
-              <time class="gray">28</time> <a href="/javascript/">Javascript</a>
-          </li>
-      
-          <li>
-              <time class="gray">18</time> <a href="/the_hollow_crown/">The_hollow_crown</a>
-          </li>
-      
-  </ul>
-  
-  <h3>March 2025</h3> 
-  <ul>
-      
-          <li>
-              <time class="gray">01</time> <a href="/css/">Css</a>
-          </li>
-      
-  </ul>
-  
-  <h3>February 2025</h3> 
-  <ul>
-      
-          <li>
-              <time class="gray">08</time> <a href="/npm/">Npm</a>
-          </li>
-      
-  </ul>
-  
-  <h3>January 2025</h3> 
-  <ul>
-      
-          <li>
-              <time class="gray">21</time> <a href="/python/">Python</a>
-          </li>
-      
-          <li>
-              <time class="gray">06</time> <a href="/c/">C</a>
-          </li>
-      
-          <li>
-              <time class="gray">04</time> <a href="/vim/">Vim</a>
-          </li>
-      
-  </ul>
-  
-  <h3>December 2024</h3> 
-  <ul>
-      
-          <li>
-              <time class="gray">26</time> <a href="/grid/">Grid</a>
-          </li>
-      
-          <li>
-              <time class="gray">25</time> <a href="/flexbox/">Flexbox</a>
-          </li>
-      
-  </ul>
-  
-  <h3>November 2024</h3> 
-  <ul>
-      
-          <li>
-              <time class="gray">27</time> <a href="/html/">Html</a>
-          </li>
-      
-          <li>
-              <time class="gray">23</time> <a href="/fundamentals/">Fundamentals</a>
-          </li>
-      
-  </ul>
-  
-  <h3>October 2024</h3> 
-  <ul>
-      
-          <li>
-              <time class="gray">29</time> <a href="/sass/">Sass</a>
-          </li>
-      
-          <li>
-              <time class="gray">03</time> <a href="/git/">Git</a>
-          </li>
-      
-  </ul>
-  
+   <div class="singleHead">
+    <div class="sinleHeadTexts">
+        
+            <h2 class="title__center">Event Delegation in JavaScript</h2>
+        
+
+        
+            <time class="h5 gray title__date">29 April 2025</time>
+        
+
+        <div><p>Event delegation is a pattern where we add a single event listener to a parent element instead of adding listeners to each child element individually.</p>
+<p>We use querySelectorAll to select elements, but instead of attaching listeners to each one, we attach a single listener to their common parent, often called a wrapper.</p>
+<p>Example:</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-javascript" data-lang="javascript"><span class="line"><span class="cl"><span class="kr">const</span> <span class="nx">wrapper</span> <span class="o">=</span> <span class="nb">document</span><span class="p">.</span><span class="nx">querySelector</span><span class="p">(</span><span class="s1">&#39;.wrapper&#39;</span><span class="p">);</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="nx">wrapper</span><span class="p">.</span><span class="nx">addEventListener</span><span class="p">(</span><span class="s1">&#39;click&#39;</span><span class="p">,</span> <span class="p">(</span><span class="nx">event</span><span class="p">)</span> <span class="p">=&gt;</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">  <span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nx">event</span><span class="p">.</span><span class="nx">target</span><span class="p">);</span>
+</span></span><span class="line"><span class="cl"><span class="p">});</span>
+</span></span></code></pre></div><p>Here, event.target gives us the actual element that was clicked inside the wrapper.</p>
+<p>We can use an if-statement to check exactly which element was clicked:</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-javascript" data-lang="javascript"><span class="line"><span class="cl"><span class="nx">wrapper</span><span class="p">.</span><span class="nx">addEventListener</span><span class="p">(</span><span class="s1">&#39;click&#39;</span><span class="p">,</span> <span class="p">(</span><span class="nx">event</span><span class="p">)</span> <span class="p">=&gt;</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">  <span class="k">if</span> <span class="p">(</span><span class="nx">event</span><span class="p">.</span><span class="nx">target</span><span class="p">.</span><span class="nx">classList</span><span class="p">.</span><span class="nx">contains</span><span class="p">(</span><span class="s1">&#39;button&#39;</span><span class="p">))</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">    <span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="s1">&#39;Button inside wrapper clicked!&#39;</span><span class="p">);</span>
+</span></span><span class="line"><span class="cl">  <span class="p">}</span>
+</span></span><span class="line"><span class="cl"><span class="p">});</span>
+</span></span></code></pre></div><p>This way, we react only when specific elements are clicked, not just any click inside the wrapper.</p>
+<p>Event delegation helps us manage events more efficiently, especially when dealing with dynamically created elements.</p>
+</div>
+    </div>
+   </div>
 </div>
  
         <div class="mt4 h5 text-center">
