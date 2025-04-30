@@ -1,6 +1,6 @@
 +++
 date = '2025-04-29T02:53:24+03:00'
-title = 'Data() in JavaScript'
+title = 'Date() in JavaScript'
 categories = [ "javascript" ]
 +++
 
