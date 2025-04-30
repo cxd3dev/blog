@@ -4,7 +4,7 @@
     <link rel="icon" type="image/x-icon" href="../images/favicon.ico">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>The Hollow Crown – Episode I: Tombs and Kings</title>
+    <title>ClientWidth and ClientHeight in JavaScript</title>
     <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/particles.js@2.0.0/particles.min.js"></script>
     <script>
@@ -88,115 +88,22 @@
    <div class="singleHead">
     <div class="sinleHeadTexts">
         
-            <h2 class="title__center">The Hollow Crown – Episode I: Tombs and Kings</h2>
+            <h2 class="title__center">ClientWidth and ClientHeight in JavaScript</h2>
         
 
         
-            <time class="h5 gray title__date">18 April 2025</time>
+            <time class="h5 gray title__date">29 April 2025</time>
         
 
-        <div><p>Let us talk of gravestones, of burial vaults, of worms.<br>
-Let us write all our sorrows on the earth and sit here,<br>
-telling sad stories of the death of kings.<br>
-Some deposed, some slain in battle,<br>
-some haunted by the ghosts of their victims,<br>
-some poisoned by their wives,<br>
-some killed in their sleep.<br>
-All of them — dead.</p>
-<p>Old John of Gaunt, time-honored Lancaster,<br>
-with your brave son Henry of Hereford beside you —<br>
-who brings forth accusations against Thomas Mowbray, Duke of Norfolk.<br>
-We had no leisure to hear them till now.</p>
-<p><strong>King:</strong><br>
-Did you ask if he speaks from enmity or duty,<br>
-as a loyal subject witnessing treason?</p>
-<p><strong>Gaunt:</strong><br>
-As far as I’ve gleaned from my son,<br>
-he sees in Mowbray a danger to Your Majesty.</p>
-<p><strong>King:</strong><br>
-Then summon them both. Let the accused and accuser<br>
-speak freely before us.</p>
-<p><strong>Both (kneeling):</strong><br>
-Long live my gracious lord!<br>
-May each day outshine the last,<br>
-and may Heaven, envious of Earth,<br>
-grant thy crown immortality.</p>
-<p><strong>King:</strong><br>
-We thank you both,<br>
-but only one of you speaks true.<br>
-For your business is not joy but accusation.<br>
-You each name the other a traitor.<br>
-Cousin Hereford, what charges do you bring<br>
-against our Norfolk?</p>
-<p><strong>Hereford:</strong><br>
-I call on Heaven to witness,<br>
-that not from malice, but out of loyalty to Your Grace,<br>
-do I accuse Mowbray.<br>
-You, Thomas Mowbray,<br>
-hear me well —<br>
-I shall prove my words with this body on Earth,<br>
-and with my soul in Heaven:<br>
-You are a traitor and a vile wretch.<br>
-The brighter the sky,<br>
-the darker the clouds that mar it.</p>
-<p><strong>Mowbray:</strong><br>
-Were it not for my reverence for the King,<br>
-I would hurl these accusations back in kind.<br>
-But I spit on your words,<br>
-and call you a dishonorable liar.</p>
-<p><strong>King:</strong><br>
-What says our cousin?</p>
-<p><strong>Hereford:</strong><br>
-On my life, I speak truth:<br>
-that Mowbray received 8000 nobles<br>
-for raising troops for Your Grace —<br>
-and squandered them in debauchery.<br>
-He is a deceiver and a traitor.<br>
-And I shall prove it in combat —<br>
-or die with honor.</p>
-<p><strong>King (aside):</strong><br>
-His resolve soars high.</p>
-<p><strong>Mowbray:</strong><br>
-He is but a subject like myself.<br>
-I shall speak without fear or filter.</p>
-<p><strong>Mowbray:</strong><br>
-Then I answer you, Bolingbroke —<br>
-from the depths of this &ldquo;traitor&rsquo;s heart&rdquo;:<br>
-you lie.</p>
-<p><strong>King:</strong><br>
-Peace, both of you.<br>
-Let not your fury draw blood.<br>
-Though I’m no healer,<br>
-I offer this prescription:<br>
-Let us not begin with violence.</p>
-<p><strong>Gaunt:</strong><br>
-I am used to making peace in my old age.<br>
-Son, throw down Mowbray’s gage.</p>
-<p><strong>Mowbray:</strong><br>
-Then give me his.</p>
-<p><strong>King:</strong><br>
-Come, Harry — must I ask you twice?</p>
-<p><strong>Mowbray:</strong><br>
-Let the leopard yield to the lion.</p>
-<p><strong>Mowbray:</strong><br>
-But my honor is my treasure.<br>
-My name unstained is life itself.<br>
-Take that, and I am already dead.</p>
-<p><strong>King:</strong><br>
-Cousin, throw down your gage.<br>
-You shall be the first.</p>
-<p><strong>Hereford:</strong><br>
-God spare me from that sin.</p>
-<p><strong>King:</strong><br>
-We were born not to beg — but to rule!<br>
-And since we cannot make peace,<br>
-you shall meet in Coventry,<br>
-on Saint Lambert’s Day.<br>
-There your swords will answer<br>
-what your words could not.</p>
-<hr>
-<p>Translation and adaptation by Cxd3<br>
-From the series &ldquo;The Hollow Crown&rdquo; — Richard II</p>
+        <div><p>The properties clientWidth and clientHeight allow us to measure the visible width and height of an element.</p>
+<p>They return the size of the element&rsquo;s content area, including padding, but excluding borders, margins, and scrollbars.</p>
+<p>Example:</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-javascript" data-lang="javascript"><span class="line"><span class="cl"><span class="kr">const</span> <span class="nx">box</span> <span class="o">=</span> <span class="nb">document</span><span class="p">.</span><span class="nx">querySelector</span><span class="p">(</span><span class="s1">&#39;.box&#39;</span><span class="p">);</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nx">box</span><span class="p">.</span><span class="nx">clientWidth</span><span class="p">);</span>  <span class="c1">// visible width of the box
+</span></span></span><span class="line"><span class="cl"><span class="c1"></span><span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nx">box</span><span class="p">.</span><span class="nx">clientHeight</span><span class="p">);</span> <span class="c1">// visible height of the box
+</span></span></span></code></pre></div><p>These values are useful when we need to dynamically adjust layout, perform measurements, or respond to user interactions based on element size.</p>
+<p>Note: clientWidth and clientHeight are read-only properties.</p>
 </div>
     </div>
    </div>
