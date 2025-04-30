@@ -6,8 +6,15 @@
     <description>Recent content on Cxd3</description>
     <generator>Hugo</generator>
     <language>en</language>
-    <lastBuildDate>Tue, 29 Apr 2025 02:00:00 +0300</lastBuildDate>
+    <lastBuildDate>Tue, 29 Apr 2025 02:53:24 +0300</lastBuildDate>
     <atom:link href="http://localhost:1313/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Data() in JavaScript</title>
+      <link>http://localhost:1313/date_in_js/</link>
+      <pubDate>Tue, 29 Apr 2025 02:53:24 +0300</pubDate>
+      <guid>http://localhost:1313/date_in_js/</guid>
+      <description>&lt;p&gt;The Date object in JavaScript helps us work with dates and times. It allows us to create, format, and extract information about specific moments in time.&lt;/p&gt;&#xA;&lt;p&gt;To create a Date object with the current date and time:&lt;/p&gt;&#xA;&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-javascript&#34; data-lang=&#34;javascript&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;kr&#34;&gt;const&lt;/span&gt; &lt;span class=&#34;nx&#34;&gt;now&lt;/span&gt; &lt;span class=&#34;o&#34;&gt;=&lt;/span&gt; &lt;span class=&#34;k&#34;&gt;new&lt;/span&gt; &lt;span class=&#34;nb&#34;&gt;Date&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;();&lt;/span&gt;&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;nx&#34;&gt;console&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;.&lt;/span&gt;&lt;span class=&#34;nx&#34;&gt;log&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;nx&#34;&gt;now&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;);&lt;/span&gt; &lt;span class=&#34;c1&#34;&gt;// current date and time&#xA;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;The Date object automatically uses the user&amp;rsquo;s system time and timezone.&#xA;This means the date and time will reflect the user&amp;rsquo;s local settings.&lt;/p&gt;&#xA;&lt;p&gt;We can also create a Date object with specific values:&lt;/p&gt;</description>
+    </item>
     <item>
       <title>setTimeout and setInterval in JavaScript</title>
       <link>http://localhost:1313/settimeout_and_setinterval_in_js/</link>
