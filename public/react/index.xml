@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>React on Cxd3</title>
+    <link>http://localhost:1313/react/</link>
+    <description>Recent content in React on Cxd3</description>
+    <generator>Hugo</generator>
+    <language>en</language>
+    <lastBuildDate>Sat, 03 May 2025 00:00:24 +0300</lastBuildDate>
+    <atom:link href="http://localhost:1313/react/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Create React App</title>
+      <link>http://localhost:1313/create_react_app/</link>
+      <pubDate>Sat, 03 May 2025 00:00:24 +0300</pubDate>
+      <guid>http://localhost:1313/create_react_app/</guid>
+      <description></description>
+    </item>
+  </channel>
+</rss>
