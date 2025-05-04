@@ -107,6 +107,25 @@
 <p>React uses Client-Side Rendering (CSR) by default, meaning the app runs in the browser after the JavaScript is downloaded. Server-Side Rendering (SSR) is a different approach we can explore later using tools like Next.js.</p>
 <p>When we start the app, React renders our application inside the <code>&lt;div id=&quot;root&quot;&gt;</code> element in index.html, letting React take control of the UI.</p>
 <p>With this setup, we successfully launched our first React project on localhost:3000 and confirmed that we are currently working with CSR.</p>
+<p>When we create a project with Create React App, we get a default component inside src/App.js that looks like this:</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-javascript" data-lang="javascript"><span class="line"><span class="cl"><span class="kr">import</span> <span class="nx">logo</span> <span class="nx">from</span> <span class="s1">&#39;./logo.svg&#39;</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl"><span class="kr">import</span> <span class="s1">&#39;./App.css&#39;</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="kd">function</span> <span class="nx">App</span><span class="p">()</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">  <span class="k">return</span> <span class="p">(</span>
+</span></span><span class="line"><span class="cl">    <span class="o">&lt;</span><span class="nx">div</span> <span class="nx">className</span><span class="o">=</span><span class="s2">&#34;App&#34;</span><span class="o">&gt;</span>
+</span></span><span class="line"><span class="cl">      <span class="o">&lt;</span><span class="nx">header</span> <span class="nx">className</span><span class="o">=</span><span class="s2">&#34;App-header&#34;</span><span class="o">&gt;</span>
+</span></span><span class="line"><span class="cl">        <span class="o">&lt;</span><span class="nx">img</span> <span class="nx">src</span><span class="o">=</span><span class="p">{</span><span class="nx">logo</span><span class="p">}</span> <span class="nx">className</span><span class="o">=</span><span class="s2">&#34;App-logo&#34;</span> <span class="nx">alt</span><span class="o">=</span><span class="s2">&#34;logo&#34;</span> <span class="o">/&gt;</span>
+</span></span><span class="line"><span class="cl">        <span class="o">&lt;</span><span class="nx">p</span><span class="o">&gt;</span>
+</span></span><span class="line"><span class="cl">          <span class="nx">Hello</span> <span class="nx">World</span>
+</span></span><span class="line"><span class="cl">        <span class="o">&lt;</span><span class="err">/p&gt;</span>
+</span></span><span class="line"><span class="cl">      <span class="o">&lt;</span><span class="err">/header&gt;</span>
+</span></span><span class="line"><span class="cl">    <span class="o">&lt;</span><span class="err">/div&gt;</span>
+</span></span><span class="line"><span class="cl">  <span class="p">);</span>
+</span></span><span class="line"><span class="cl"><span class="p">}</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="kr">export</span> <span class="k">default</span> <span class="nx">App</span><span class="p">;</span>
+</span></span></code></pre></div><p>We can clean up this file by removing the logo and unused content to start building our own application.</p>
 </div>
     </div>
    </div>

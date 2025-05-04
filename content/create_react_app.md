@@ -28,3 +28,27 @@ React uses Client-Side Rendering (CSR) by default, meaning the app runs in the b
 When we start the app, React renders our application inside the `<div id="root">` element in index.html, letting React take control of the UI.
 
 With this setup, we successfully launched our first React project on localhost:3000 and confirmed that we are currently working with CSR.
+
+When we create a project with Create React App, we get a default component inside src/App.js that looks like this:
+
+```javascript
+import logo from './logo.svg';
+import './App.css';
+
+function App() {
+  return (
+    <div className="App">
+      <header className="App-header">
+        <img src={logo} className="App-logo" alt="logo" />
+        <p>
+          Hello World
+        </p>
+      </header>
+    </div>
+  );
+}
+
+export default App;
+```
+
+We can clean up this file by removing the logo and unused content to start building our own application.
