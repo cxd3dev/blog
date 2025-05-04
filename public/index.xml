@@ -6,8 +6,15 @@
     <description>Recent content on Cxd3</description>
     <generator>Hugo</generator>
     <language>en</language>
-    <lastBuildDate>Sat, 03 May 2025 00:00:24 +0300</lastBuildDate>
+    <lastBuildDate>Sun, 04 May 2025 00:00:24 +0300</lastBuildDate>
     <atom:link href="http://localhost:1313/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>JSX and index.js with createRoot in React</title>
+      <link>http://localhost:1313/jsx/</link>
+      <pubDate>Sun, 04 May 2025 00:00:24 +0300</pubDate>
+      <guid>http://localhost:1313/jsx/</guid>
+      <description>&lt;p&gt;JSX stands for JavaScript XML. It is a syntax extension (or preprocessor) for JavaScript that allows us to write HTML-like code directly inside JavaScript. JSX is not valid JavaScript by itself — it needs to be compiled (transpiled) by tools like Babel into standard JavaScript that browsers can understand.&lt;/p&gt;&#xA;&lt;p&gt;When we create a React project using Create React App, the entry point of the application is index.js.&lt;/p&gt;&#xA;&lt;p&gt;In this file, we import necessary modules:&lt;/p&gt;</description>
+    </item>
     <item>
       <title>Create React App</title>
       <link>http://localhost:1313/create_react_app/</link>
